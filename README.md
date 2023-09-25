@@ -2,7 +2,7 @@
 
 Bootstrap page containing an overview of building blocks and a building blocks register.
 
-[See it live here](https://blocks.ogc.org/)
+[See it live here](https://opengeospatial.github.io/bblocks/register.html)
 
 ## Local build/test
 
