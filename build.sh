@@ -1,0 +1,1 @@
+docker run --pull=always --rm --workdir /workspace -v "$(pwd):/workspace" --user $(id -u)       ghcr.io/opengeospatial/bblocks-postprocess  --clean true    --items-dir registereditems/ --base-url http://localhost:9090/register/

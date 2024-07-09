@@ -15,21 +15,16 @@ All the output files will be generated under `build-local`.
 1. Clone the repository: `git clone https://github.com/opengeospatial/bblocks.git --recurse-submodules`
 2. Change into the repository folder: `cd bblocks` 
 3. Update submodules: `git submodule update --recursive --remote`
-4. Build the Register:
+4. Build the Register: run build.sh or
    ```shell
    # Process building blocks
-   docker run --pull=always --rm --workdir /workspace -v $(pwd):/workspace --user $UID \
+   docker run --pull=always --rm --workdir /workspace -v "$(pwd):/workspace" --user $(id -u) \
       ghcr.io/opengeospatial/bblocks-postprocess  --clean true \
       --items-dir registereditems/ \
-      --base-url https://opengeospatial.github.io/bblocks/ 
-    # Build Slate docs
-    docker run --pull=always --rm --user $UID \
-      -v "$(pwd)/build-local/generateddocs/slate:/srv/slate/source" \
-      -v "$(pwd)/build-local/generateddocs/slate-build:/srv/slate/build" \
-      dockerogc/slate build
+      --base-url https://opengeospatial.github.io/bblocks/
     ```
-5. Run a web server locally, on this folder. For instance: `npx http-server`
-6. Access it on a browser: `http://127.0.0.1:8080`.
+
+docker run --pull=always --rm --workdir /workspace -v $(pwd):/workspace --user $UID       ghcr.io/opengeospatial/bblocks-postprocess  --clean true    --items-dir registereditems/      --base-url https://opengeospatial.github.io/bblocks/
 
 If you need to rebuild the Register, just run steps 2 and 3.
 
