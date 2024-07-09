@@ -1,0 +1,10 @@
+{
+  "allOf": [
+    {
+      "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.json"
+    },
+    {
+      "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/schema.json"
+    }
+  ]
+}

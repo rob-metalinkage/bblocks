@@ -1,0 +1,217 @@
+{
+  "title": "Validation report for ogc.geo.json-fg.feature-lenient-geosparql-geometry - JSON-FG Feature - Lenient - with GeoSPARQL Geometry",
+  "bblockName": "JSON-FG Feature - Lenient - with GeoSPARQL Geometry",
+  "bblockId": "ogc.geo.json-fg.feature-lenient-geosparql-geometry",
+  "generated": "2024-07-09T10:44:47.805269+00:00",
+  "result": true,
+  "items": [
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "tests/geo/json-fg/feature-lenient-geosparql-geometry/example_1_1.json",
+        "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature-lenient-geosparql-geometry/example_1_1.json",
+        "exampleIndex": 1,
+        "snippetIndex": 1,
+        "language": "json",
+        "sourceUrl": "https://github.com/opengeospatial/ogc-feat-geo-json/raw/main/core/examples/building.json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": []
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_1_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_1_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_1_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_1_1.ttl",
+              "size": 20,
+              "isError": false,
+              "message": "Output Turtle example_1_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "registereditems/geo/features/geosparqlGeometry/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for registereditems/geo/features/geosparqlGeometry/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "registereditems/geo/features/geosparqlGeometry/rules.shacl",
+              "focusNodes": {
+                ":featureHasGeoSPARLGeometry": {
+                  "nodes": [
+                    "<https://example.com/json-fg/DENW19AL0000giv5BL>"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for registereditems/geo/features/geosparqlGeometry/rules.shacl:\n - Shape :featureHasGeoSPARLGeometry: <https://example.com/json-fg/DENW19AL0000giv5BL>\n"
+            }
+          ]
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    },
+    {
+      "source": {
+        "type": "EXAMPLE",
+        "requireFail": false,
+        "filename": "tests/geo/json-fg/feature-lenient-geosparql-geometry/example_2_1.json",
+        "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature-lenient-geosparql-geometry/example_2_1.json",
+        "exampleIndex": 2,
+        "snippetIndex": 1,
+        "language": "json",
+        "sourceUrl": "https://github.com/opengeospatial/ogc-feat-geo-json/raw/main/core/examples/fence.json"
+      },
+      "result": true,
+      "sections": [
+        {
+          "name": "GENERAL",
+          "title": "General",
+          "entries": []
+        },
+        {
+          "name": "FILES",
+          "title": "Files",
+          "entries": [
+            {
+              "isError": false,
+              "message": "Using example_2_1.json from examples"
+            },
+            {
+              "op": "jsonld-uplift",
+              "isError": false,
+              "message": "JSON-LD context is present - uplifting"
+            },
+            {
+              "op": "jsonld-create",
+              "filename": "example_2_1.jsonld",
+              "isError": false,
+              "message": "Output JSON-LD example_2_1.jsonld created"
+            },
+            {
+              "op": "ttl-create",
+              "empty": false,
+              "filename": "example_2_1.ttl",
+              "size": 12,
+              "isError": false,
+              "message": "Output Turtle example_2_1.ttl created"
+            }
+          ]
+        },
+        {
+          "name": "JSON_SCHEMA",
+          "title": "JSON Schema",
+          "entries": [
+            {
+              "op": "validation",
+              "result": true,
+              "isError": false,
+              "message": "Validation passed"
+            }
+          ]
+        },
+        {
+          "name": "JSON_LD",
+          "title": "JSON-LD",
+          "entries": []
+        },
+        {
+          "name": "TURTLE",
+          "title": "Turtle",
+          "entries": []
+        },
+        {
+          "name": "SHACL",
+          "title": "SHACL",
+          "entries": [
+            {
+              "op": "shacl-report",
+              "shaclFile": "registereditems/geo/features/geosparqlGeometry/rules.shacl",
+              "graph": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] a sh:ValidationReport ;\n    sh:conforms true .\n\n",
+              "isError": false,
+              "message": "Validation result for registereditems/geo/features/geosparqlGeometry/rules.shacl:\n  Validation Report\n  Conforms: True\n  "
+            },
+            {
+              "shaclFile": "registereditems/geo/features/geosparqlGeometry/rules.shacl",
+              "focusNodes": {
+                ":featureHasGeoSPARLGeometry": {
+                  "nodes": [
+                    "<https://example.com/json-fg/fence.1>"
+                  ]
+                }
+              },
+              "isError": false,
+              "message": "Focus nodes for registereditems/geo/features/geosparqlGeometry/rules.shacl:\n - Shape :featureHasGeoSPARLGeometry: <https://example.com/json-fg/fence.1>\n"
+            }
+          ]
+        },
+        {
+          "name": "UNKNOWN",
+          "title": "Unknown errors",
+          "entries": []
+        }
+      ]
+    }
+  ],
+  "globalErrors": {},
+  "counts": {
+    "total": 2,
+    "passed": 2,
+    "failed": 0
+  }
+}

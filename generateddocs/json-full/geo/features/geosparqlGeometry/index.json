@@ -1,0 +1,81 @@
+
+
+{
+  "itemIdentifier": "ogc.geo.features.geosparqlGeometry",
+  "name": "Mixin for feature with GeoSPARQL geometry",
+  "abstract": "This schema can be used as a mixin for feature objects to represent their geometry as a literal GeoSPARQL value instead of an RDF resource",
+  "status": "stable",
+  "dateTimeAddition": "2024-07-09T10:57:00+00:00",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "1.0",
+  "dateOfLastChange": "2024-07-09",
+  "maturity": "mature",
+  "scope": "geo",
+  "group": "Common",
+  "shaclRules": {
+    "ogc.geo.features.geosparqlGeometry": [
+      "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/geosparqlGeometry/rules.shacl"
+    ]
+  },
+  "dependsOn": [
+    "ogc.geo.common.data_types.geojson"
+  ],
+  "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld",
+  "schema": {
+    "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/schema.yaml",
+    "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/schema.json"
+  },
+  "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/geosparqlGeometry/schema.yaml",
+  "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/geosparqlGeometry/context.jsonld",
+  "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/geosparqlGeometry/",
+  "validationPassed": true,
+  "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/features/geosparqlGeometry/",
+  "examples": [
+    {
+      "title": "Sample feature with POINT GeoSPARQL geometry",
+      "snippets": [
+        {
+          "language": "json",
+          "base-uri": "https://example.com/features/with-geosparl-geometry/",
+          "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      174.7501603083,\n      -36.9307359096\n    ]\n  },\n  \"properties\": {\n    \"comment\": \"An attribute value\"\n  }\n}\n",
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/features/geosparqlGeometry/example_1_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      174.7501603083,\n      -36.9307359096\n    ]\n  },\n  \"properties\": {\n    \"comment\": \"An attribute value\"\n  },\n  \"@context\": \"https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld\"\n}",
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/features/geosparqlGeometry/example_1_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n[] geo:hasGeometry \"{\\\"coordinates\\\":[174.7501603083,-36.9307359096],\\\"type\\\":\\\"Point\\\"}\"^^rdf:JSON .\n\n",
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/features/geosparqlGeometry/example_1_1.ttl"
+        }
+      ]
+    },
+    {
+      "title": "Sample object using the \"geometry\" mixin",
+      "snippets": [
+        {
+          "language": "json",
+          "base-uri": "https://example.com/features/with-geosparl-geometry/",
+          "code": "{\n  \"type\": \"Hospital\",\n  \"geometry\": {\n    \"coordinates\": [\n      [\n        [\n          -3.911628540272403,\n          43.651451755119155\n        ],\n        [\n          -4.151550411746342,\n          43.431113348164445\n        ],\n        [\n          -4.007817057797524,\n          43.198127563783316\n        ],\n        [\n          -3.5760153469796023,\n          43.29143725429333\n        ],\n        [\n          -3.455852048155407,\n          43.63987947818879\n        ],\n        [\n          -3.911628540272403,\n          43.651451755119155\n        ]\n      ]\n    ],\n    \"type\": \"Polygon\"\n  }\n}\n",
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/features/geosparqlGeometry/example_2_1.json"
+        },
+        {
+          "language": "jsonld",
+          "code": "{\n  \"type\": \"Hospital\",\n  \"geometry\": {\n    \"coordinates\": [\n      [\n        [\n          -3.911628540272403,\n          43.651451755119155\n        ],\n        [\n          -4.151550411746342,\n          43.431113348164445\n        ],\n        [\n          -4.007817057797524,\n          43.198127563783316\n        ],\n        [\n          -3.5760153469796023,\n          43.29143725429333\n        ],\n        [\n          -3.455852048155407,\n          43.63987947818879\n        ],\n        [\n          -3.911628540272403,\n          43.651451755119155\n        ]\n      ]\n    ],\n    \"type\": \"Polygon\"\n  },\n  \"@context\": \"https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld\"\n}",
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/features/geosparqlGeometry/example_2_1.jsonld"
+        },
+        {
+          "language": "ttl",
+          "code": "@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n\n[] geo:hasGeometry \"{\\\"coordinates\\\":[[[-3.911628540272403,43.651451755119155],[-4.151550411746342,43.431113348164445],[-4.007817057797524,43.198127563783316],[-3.5760153469796023,43.29143725429333],[-3.455852048155407,43.63987947818879],[-3.911628540272403,43.651451755119155]]],\\\"type\\\":\\\"Polygon\\\"}\"^^rdf:JSON .\n\n",
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/features/geosparqlGeometry/example_2_1.ttl"
+        }
+      ]
+    }
+  ],
+  "annotatedSchema": "type: object\nproperties:\n  geometry:\n    $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml#/properties/geometry\n    x-jsonld-id: http://www.opengis.net/ont/geosparql#hasGeometry\n    x-jsonld-type: '@json'\nx-jsonld-prefixes:\n  geo: http://www.opengis.net/ont/geosparql#\n",
+  "gitRepository": "https://github.com/rob-metalinkage/bblocks",
+  "gitPath": "registereditems/geo/features/geosparqlGeometry"
+}

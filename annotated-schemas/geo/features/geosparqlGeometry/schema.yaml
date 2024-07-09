@@ -1,0 +1,8 @@
+type: object
+properties:
+  geometry:
+    $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml#/properties/geometry
+    x-jsonld-id: http://www.opengis.net/ont/geosparql#hasGeometry
+    x-jsonld-type: '@json'
+x-jsonld-prefixes:
+  geo: http://www.opengis.net/ont/geosparql#

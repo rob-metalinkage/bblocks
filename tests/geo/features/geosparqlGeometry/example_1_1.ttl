@@ -1,0 +1,5 @@
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+
+[] geo:hasGeometry "{\"coordinates\":[174.7501603083,-36.9307359096],\"type\":\"Point\"}"^^rdf:JSON .
+
