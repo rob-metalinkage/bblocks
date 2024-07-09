@@ -57,7 +57,7 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
     "pitch": -0.43610515937237904,
     "roll": 0.0
   },
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld"
 }
 ```
 
@@ -109,7 +109,7 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
     "pitch": -0.4381464123477409,
     "roll": 0.0
   },
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld"
 }
 ```
 
@@ -161,7 +161,7 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
     "pitch": -0.4401787262476278,
     "roll": 0.0
   },
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld"
 }
 ```
 
@@ -213,7 +213,7 @@ unit of measure SHALL be the degree and the angles represented as signed real nu
     "pitch": -0.44220204512692407,
     "roll": 0.0
   },
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld"
 }
 ```
 
@@ -289,8 +289,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.json)
-* JSON version: [schema.json](https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml)
 
 
 # JSON-LD Context
@@ -320,7 +320,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld)
 
 ## Sources
 
@@ -330,6 +330,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/bblocks](https://github.com/opengeospatial/bblocks)
+* URL: [https://github.com/rob-metalinkage/bblocks](https://github.com/rob-metalinkage/bblocks)
 * Path: `registereditems/geo/geopose/basic/ypr`
 

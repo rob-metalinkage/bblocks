@@ -39,7 +39,7 @@ See panel to right - note that a more user friendly "collapsable" version is in 
     "P1",
     "P2"
   ],
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld"
 }
 ```
 
@@ -61,12 +61,12 @@ $schema: https://json-schema.org/draft/2020-12/schema
 description: feature with geometry by reference
 properties:
   type:
-    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+    $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
     x-jsonld-id: '@type'
   references:
     type: array
     items:
-      $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+      $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
     x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
     x-jsonld-type: '@id'
     x-jsonld-container: '@list'
@@ -84,8 +84,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.json)
-* JSON version: [schema.json](https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.yaml)
 
 
 # JSON-LD Context
@@ -109,13 +109,13 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld)
 
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/bblocks](https://github.com/opengeospatial/bblocks)
+* URL: [https://github.com/rob-metalinkage/bblocks](https://github.com/rob-metalinkage/bblocks)
 * Path: `registereditems/ogc-utils/topology`
 

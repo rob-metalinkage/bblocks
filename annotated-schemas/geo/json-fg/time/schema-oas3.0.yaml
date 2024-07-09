@@ -8,17 +8,17 @@ oneOf:
       x-jsonld-id: http://www.w3.org/2006/time#hasTime
       x-jsonld-type: http://www.w3.org/2001/XMLSchema#date
       allOf:
-      - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.yaml#/$defs/date
+      - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.yaml#/$defs/date
     timestamp:
       x-jsonld-id: http://www.w3.org/2006/time#hasTime
       x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime
       allOf:
-      - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.yaml#/$defs/timestamp
+      - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.yaml#/$defs/timestamp
     interval:
       x-jsonld-id: http://www.w3.org/2006/time#hasTime
       x-jsonld-container: '@list'
       allOf:
-      - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.yaml#/$defs/interval
+      - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.yaml#/$defs/interval
 $defs:
   date:
     type: string
@@ -32,8 +32,8 @@ $defs:
     maxItems: 2
     items:
       oneOf:
-      - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.yaml#/$defs/date
-      - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.yaml#/$defs/timestamp
+      - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.yaml#/$defs/date
+      - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.yaml#/$defs/timestamp
       - type: string
         enum:
         - ..

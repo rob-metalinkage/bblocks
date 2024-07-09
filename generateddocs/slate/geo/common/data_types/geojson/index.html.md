@@ -464,12 +464,12 @@ x-jsonld-prefixes:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fcommon%2Fdata_types%2Fgeojson%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fcommon%2Fdata_types%2Fgeojson%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml</a>
-* JSON version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json</a>
+* YAML version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml</a>
+* JSON version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json</a>
 
 
 # JSON-LD Context
@@ -512,10 +512,10 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fcommon%2Fdata_types%2Fgeojson%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fcommon%2Fdata_types%2Fgeojson%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/context.jsonld" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/context.jsonld</a>
+<a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/context.jsonld" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/context.jsonld</a>
 
 # References
 
@@ -525,7 +525,7 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/opengeospatial/bblocks" target="_blank">https://github.com/opengeospatial/bblocks</a>
+* URL: <a href="https://github.com/rob-metalinkage/bblocks" target="_blank">https://github.com/rob-metalinkage/bblocks</a>
 * Path:
-<code><a href="https://github.com/opengeospatial/bblocks/blob/HEAD/registereditems/geo/common/data_types/geojson" target="_blank">registereditems/geo/common/data_types/geojson</a></code>
+<code><a href="https://github.com/rob-metalinkage/bblocks/blob/HEAD/registereditems/geo/common/data_types/geojson" target="_blank">registereditems/geo/common/data_types/geojson</a></code>
 

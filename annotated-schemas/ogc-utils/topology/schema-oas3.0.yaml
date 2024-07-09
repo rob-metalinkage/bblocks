@@ -13,37 +13,37 @@ x-defs:
         pattern: ^[^:<>{}|\\^`"\s]*(\?[^<>{}|\\^`"\s]*)?(#[^<>{}|\\^`"\s]*)?$
       Single:
         anyOf:
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/IRI
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/CURIE
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/LocalPart
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/IRI
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/CURIE
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/LocalPart
       Multiple:
         oneOf:
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Single
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Single
         - type: array
           items:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Single
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Single
       MultipleOrObject:
         oneOf:
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Multiple
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Multiple
         - type: object
       MultipleOrObjectOrNull:
         oneOf:
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/MultipleOrObject
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/MultipleOrObject
         nullable: true
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+    x-schema-source: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
     x-schema-version: https://json-schema.org/draft/2020-12/schema
     allOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Single
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie/$defs/Single
 description: feature with geometry by reference
 properties:
   type:
     x-jsonld-id: '@type'
     allOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie
   references:
     type: array
     items:
-      $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie
+      $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.iri-or-curie
     x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
     x-jsonld-type: '@id'
     x-jsonld-container: '@list'

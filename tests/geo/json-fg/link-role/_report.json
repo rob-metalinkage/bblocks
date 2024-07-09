@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.json-fg.link-role - Link with role and target conformance",
   "bblockName": "Link with role and target conformance",
   "bblockId": "ogc.geo.json-fg.link-role",
-  "generated": "2024-07-09T06:23:43.799329+00:00",
+  "generated": "2024-07-09T06:37:00.639919+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "tests/geo/json-fg/link-role/example_1_1.json",
-        "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/link-role/example_1_1.json",
+        "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/link-role/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"

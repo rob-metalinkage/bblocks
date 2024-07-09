@@ -19,7 +19,7 @@ This Building Block extends the standard JSON-FG one by removing the requirement
 
 ```yaml
 allOf:
-- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
+- $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
 - type: object
   required:
   - type
@@ -44,10 +44,10 @@ allOf:
       items:
         allOf:
         - $ref: https://beta.schemas.opengis.net/json-fg/link.json
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
       x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
     time:
-      $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml
+      $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml
       x-jsonld-id: http://purl.org/dc/terms/time
     coordRefSys:
       $ref: https://beta.schemas.opengis.net/json-fg/coordrefsys.json
@@ -57,48 +57,27 @@ allOf:
       x-jsonld-id: http://purl.org/dc/terms/spatial
     geometry:
       $ref: https://beta.schemas.opengis.net/json-fg/geometry.json
-      x-jsonld-id: https://purl.org/geojson/vocab#geometry
+      x-jsonld-id: http://www.opengis.net/ont/geosparql#hasGeometry
+      x-jsonld-type: '@json'
     properties:
       oneOf:
       - type: 'null'
       - type: object
       x-jsonld-id: '@nest'
 x-jsonld-extra-terms:
-  Feature: https://purl.org/geojson/vocab#Feature
-  FeatureCollection: https://purl.org/geojson/vocab#FeatureCollection
-  GeometryCollection: https://purl.org/geojson/vocab#GeometryCollection
-  LineString: https://purl.org/geojson/vocab#LineString
-  MultiLineString: https://purl.org/geojson/vocab#MultiLineString
-  MultiPoint: https://purl.org/geojson/vocab#MultiPoint
-  MultiPolygon: https://purl.org/geojson/vocab#MultiPolygon
-  Point: https://purl.org/geojson/vocab#Point
-  Polygon: https://purl.org/geojson/vocab#Polygon
-  Polyhedron: https://purl.org/geojson/vocab#Polyhedron
-  MultiPolyhedron: https://purl.org/geojson/vocab#MultiPolyhedron
-  Prism:
-    x-jsonld-id: https://purl.org/geojson/vocab#Prism
-    x-jsonld-context:
-      base: https://purl.org/geojson/vocab#prismBase
-      lower: https://purl.org/geojson/vocab#prismLower
-      upper: https://purl.org/geojson/vocab#prismUpper
-  MultiPrism:
-    x-jsonld-id: https://purl.org/geojson/vocab#MultiPrism
-    x-jsonld-context:
-      prisms: https://purl.org/geojson/vocab#prisms
+  Feature: geojson:Feature
+  FeatureCollection: geojson:FeatureCollection
   bbox:
     x-jsonld-container: '@list'
-    x-jsonld-id: https://purl.org/geojson/vocab#bbox
-  coordinates:
-    x-jsonld-container: '@list'
-    x-jsonld-id: https://purl.org/geojson/vocab#coordinates
+    x-jsonld-id: geojson:bbox
   features:
     x-jsonld-container: '@set'
-    x-jsonld-id: https://purl.org/geojson/vocab#features
+    x-jsonld-id: geojson:features
   geometries:
-    x-jsonld-id: https://purl.org/geojson/vocab#geometry
+    x-jsonld-id: geojson:geometry
     x-jsonld-container: '@list'
 x-jsonld-prefixes:
-  geojson: https://purl.org/geojson/vocab#
+  geo: http://www.opengis.net/ont/geosparql#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   dct: http://purl.org/dc/terms/
   owlTime: http://www.w3.org/2006/time#
@@ -107,8 +86,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.json)
-* JSON version: [schema.json](https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml)
 
 
 # JSON-LD Context
@@ -120,8 +99,14 @@ Links to the schema:
     "id": "@id",
     "properties": "@nest",
     "geometry": {
-      "@context": {},
-      "@id": "geojson:geometry"
+      "@context": {
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
+      },
+      "@id": "geo:hasGeometry",
+      "@type": "@json"
     },
     "bbox": {
       "@container": "@list",
@@ -180,26 +165,6 @@ Links to the schema:
     },
     "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
     "place": "dct:spatial",
-    "Polyhedron": "geojson:Polyhedron",
-    "MultiPolyhedron": "geojson:MultiPolyhedron",
-    "Prism": {
-      "@id": "geojson:Prism",
-      "@context": {
-        "base": "geojson:prismBase",
-        "lower": "geojson:prismLower",
-        "upper": "geojson:prismUpper"
-      }
-    },
-    "MultiPrism": {
-      "@id": "geojson:MultiPrism",
-      "@context": {
-        "prisms": "geojson:prisms"
-      }
-    },
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
-    },
     "geometries": {
       "@id": "geojson:geometry",
       "@container": "@list"
@@ -208,6 +173,7 @@ Links to the schema:
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "@version": 1.1
@@ -216,7 +182,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/context.jsonld)
 
 ## Sources
 
@@ -226,6 +192,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/bblocks](https://github.com/opengeospatial/bblocks)
+* URL: [https://github.com/rob-metalinkage/bblocks](https://github.com/rob-metalinkage/bblocks)
 * Path: `registereditems/geo/json-fg/feature-lenient`
 

@@ -11,7 +11,7 @@
           "x-jsonld-type": "http://www.w3.org/2001/XMLSchema#date",
           "allOf": [
             {
-              "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.json#/$defs/date"
+              "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.json#/$defs/date"
             }
           ]
         },
@@ -20,7 +20,7 @@
           "x-jsonld-type": "http://www.w3.org/2001/XMLSchema#dateTime",
           "allOf": [
             {
-              "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.json#/$defs/timestamp"
+              "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.json#/$defs/timestamp"
             }
           ]
         },
@@ -29,7 +29,7 @@
           "x-jsonld-container": "@list",
           "allOf": [
             {
-              "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.json#/$defs/interval"
+              "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.json#/$defs/interval"
             }
           ]
         }
@@ -52,10 +52,10 @@
       "items": {
         "oneOf": [
           {
-            "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.json#/$defs/date"
+            "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.json#/$defs/date"
           },
           {
-            "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.json#/$defs/timestamp"
+            "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema-oas3.0.json#/$defs/timestamp"
           },
           {
             "type": "string",

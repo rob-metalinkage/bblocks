@@ -4,5 +4,5 @@
     "P1",
     "P2"
   ],
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld"
 }

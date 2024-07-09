@@ -38,11 +38,11 @@ properties:
   position:
     x-jsonld-id: http://example.com/geopose/position
     allOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema-oas3.0.yaml#/definitions/Position
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema-oas3.0.yaml#/definitions/Position
   angles:
     x-jsonld-id: http://example.com/geopose/angles
     allOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema-oas3.0.yaml#/definitions/angles
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema-oas3.0.yaml#/definitions/angles
 required:
 - position
 - angles

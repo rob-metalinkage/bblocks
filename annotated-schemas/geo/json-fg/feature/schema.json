@@ -12,7 +12,7 @@
   ],
   "allOf": [
     {
-      "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json"
+      "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json"
     },
     {
       "properties": {
@@ -46,14 +46,14 @@
                 "$ref": "https://beta.schemas.opengis.net/json-fg/link.json"
               },
               {
-                "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json"
+                "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json"
               }
             ]
           },
           "x-jsonld-id": "http://www.w3.org/2000/01/rdf-schema#seeAlso"
         },
         "time": {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json",
+          "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json",
           "x-jsonld-id": "http://purl.org/dc/terms/time"
         },
         "coordRefSys": {
@@ -66,7 +66,8 @@
         },
         "geometry": {
           "$ref": "https://beta.schemas.opengis.net/json-fg/geometry.json",
-          "x-jsonld-id": "https://purl.org/geojson/vocab#geometry"
+          "x-jsonld-id": "http://www.opengis.net/ont/geosparql#hasGeometry",
+          "x-jsonld-type": "@json"
         },
         "properties": {
           "oneOf": [
@@ -83,50 +84,23 @@
     }
   ],
   "x-jsonld-extra-terms": {
-    "Feature": "https://purl.org/geojson/vocab#Feature",
-    "FeatureCollection": "https://purl.org/geojson/vocab#FeatureCollection",
-    "GeometryCollection": "https://purl.org/geojson/vocab#GeometryCollection",
-    "LineString": "https://purl.org/geojson/vocab#LineString",
-    "MultiLineString": "https://purl.org/geojson/vocab#MultiLineString",
-    "MultiPoint": "https://purl.org/geojson/vocab#MultiPoint",
-    "MultiPolygon": "https://purl.org/geojson/vocab#MultiPolygon",
-    "Point": "https://purl.org/geojson/vocab#Point",
-    "Polygon": "https://purl.org/geojson/vocab#Polygon",
-    "Polyhedron": "https://purl.org/geojson/vocab#Polyhedron",
-    "MultiPolyhedron": "https://purl.org/geojson/vocab#MultiPolyhedron",
-    "Prism": {
-      "x-jsonld-id": "https://purl.org/geojson/vocab#Prism",
-      "x-jsonld-context": {
-        "base": "https://purl.org/geojson/vocab#prismBase",
-        "lower": "https://purl.org/geojson/vocab#prismLower",
-        "upper": "https://purl.org/geojson/vocab#prismUpper"
-      }
-    },
-    "MultiPrism": {
-      "x-jsonld-id": "https://purl.org/geojson/vocab#MultiPrism",
-      "x-jsonld-context": {
-        "prisms": "https://purl.org/geojson/vocab#prisms"
-      }
-    },
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
     "bbox": {
       "x-jsonld-container": "@list",
-      "x-jsonld-id": "https://purl.org/geojson/vocab#bbox"
-    },
-    "coordinates": {
-      "x-jsonld-container": "@list",
-      "x-jsonld-id": "https://purl.org/geojson/vocab#coordinates"
+      "x-jsonld-id": "geojson:bbox"
     },
     "features": {
       "x-jsonld-container": "@set",
-      "x-jsonld-id": "https://purl.org/geojson/vocab#features"
+      "x-jsonld-id": "geojson:features"
     },
     "geometries": {
-      "x-jsonld-id": "https://purl.org/geojson/vocab#geometry",
+      "x-jsonld-id": "geojson:geometry",
       "x-jsonld-container": "@list"
     }
   },
   "x-jsonld-prefixes": {
-    "geojson": "https://purl.org/geojson/vocab#",
+    "geo": "http://www.opengis.net/ont/geosparql#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dct": "http://purl.org/dc/terms/",
     "owlTime": "http://www.w3.org/2006/time#"

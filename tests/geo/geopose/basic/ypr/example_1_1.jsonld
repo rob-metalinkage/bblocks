@@ -9,5 +9,5 @@
     "pitch": -0.43610515937237904,
     "roll": 0.0
   },
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld"
 }

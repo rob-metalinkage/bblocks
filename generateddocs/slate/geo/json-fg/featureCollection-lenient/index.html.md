@@ -66,26 +66,26 @@ allOf:
       items:
         allOf:
         - $ref: https://beta.schemas.opengis.net/json-fg/link.json
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
       x-jsonld-id: rdfs:seeAlso
     features:
       type: array
       items:
-        $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml
+        $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml
       x-jsonld-container: '@set'
       x-jsonld-id: https://purl.org/geojson/vocab#features
-- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
+- $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
 x-jsonld-prefixes:
   geojson: https://purl.org/geojson/vocab#
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fjson-fg%2FfeatureCollection-lenient%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fjson-fg%2FfeatureCollection-lenient%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml</a>
-* JSON version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.json" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.json</a>
+* YAML version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml</a>
+* JSON version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.json" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.json</a>
 
 
 # JSON-LD Context
@@ -117,6 +117,16 @@ Links to the schema:
     },
     "features": {
       "@context": {
+        "geometry": {
+          "@context": {
+            "coordinates": {
+              "@container": "@list",
+              "@id": "geojson:coordinates"
+            }
+          },
+          "@id": "geo:hasGeometry",
+          "@type": "@json"
+        },
         "featureType": "@type",
         "time": {
           "@context": {
@@ -144,7 +154,12 @@ Links to the schema:
     "id": "@id",
     "properties": "@nest",
     "geometry": {
-      "@context": {},
+      "@context": {
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
+      },
       "@id": "geojson:geometry"
     },
     "bbox": {
@@ -160,26 +175,6 @@ Links to the schema:
     "MultiPolygon": "geojson:MultiPolygon",
     "Point": "geojson:Point",
     "Polygon": "geojson:Polygon",
-    "Polyhedron": "geojson:Polyhedron",
-    "MultiPolyhedron": "geojson:MultiPolyhedron",
-    "Prism": {
-      "@id": "geojson:Prism",
-      "@context": {
-        "base": "geojson:prismBase",
-        "lower": "geojson:prismLower",
-        "upper": "geojson:prismUpper"
-      }
-    },
-    "MultiPrism": {
-      "@id": "geojson:MultiPrism",
-      "@context": {
-        "prisms": "geojson:prisms"
-      }
-    },
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
-    },
     "geometries": {
       "@id": "geojson:geometry",
       "@container": "@list"
@@ -188,6 +183,7 @@ Links to the schema:
     "oa": "http://www.w3.org/ns/oa#",
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "dct": "http://purl.org/dc/terms/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
     "owlTime": "http://www.w3.org/2006/time#",
     "time": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -196,10 +192,10 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fjson-fg%2FfeatureCollection-lenient%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fjson-fg%2FfeatureCollection-lenient%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/context.jsonld" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/context.jsonld</a>
+<a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/context.jsonld" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/context.jsonld</a>
 
 # References
 
@@ -209,7 +205,7 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/opengeospatial/bblocks" target="_blank">https://github.com/opengeospatial/bblocks</a>
+* URL: <a href="https://github.com/rob-metalinkage/bblocks" target="_blank">https://github.com/rob-metalinkage/bblocks</a>
 * Path:
-<code><a href="https://github.com/opengeospatial/bblocks/blob/HEAD/registereditems/geo/json-fg/featureCollection-lenient" target="_blank">registereditems/geo/json-fg/featureCollection-lenient</a></code>
+<code><a href="https://github.com/rob-metalinkage/bblocks/blob/HEAD/registereditems/geo/json-fg/featureCollection-lenient" target="_blank">registereditems/geo/json-fg/featureCollection-lenient</a></code>
 

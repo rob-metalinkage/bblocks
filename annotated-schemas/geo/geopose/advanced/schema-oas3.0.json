@@ -52,13 +52,13 @@
   "type": "object",
   "properties": {
     "frameSpecification": {
-      "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/advanced/schema-oas3.0.json#/definitions/FrameSpecification"
+      "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/advanced/schema-oas3.0.json#/definitions/FrameSpecification"
     },
     "quaternion": {
       "x-jsonld-id": "http://example.com/geopose/quaternion",
       "allOf": [
         {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/advanced/schema-oas3.0.json#/definitions/Quaternion"
+          "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/advanced/schema-oas3.0.json#/definitions/Quaternion"
         }
       ]
     },

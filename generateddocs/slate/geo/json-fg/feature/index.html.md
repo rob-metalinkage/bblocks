@@ -30,7 +30,7 @@ A OGC Features and Geometries JSON (JSON-FG) Feature, extending GeoJSON to suppo
 </p>
 
 <aside class="success">
-This building block is <strong><a href="https://github.com/opengeospatial/bblocks/blob/master/tests/geo/json-fg/feature/" target="_blank">valid</a></strong>
+This building block is <strong><a href="https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/feature/" target="_blank">valid</a></strong>
 </aside>
 
 # Description
@@ -177,8 +177,8 @@ JSON Schema is used to formally specify the JSON-FG syntax.
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/feature/example_1_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ffeature%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_1_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ffeature%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -443,14 +443,14 @@ JSON Schema is used to formally specify the JSON-FG syntax.
       }
     ]
   },
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/feature/example_1_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ffeature%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ffeature%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -458,6 +458,7 @@ JSON Schema is used to formally specify the JSON-FG syntax.
 
 ```turtle
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix ns1: <http://www.iana.org/assignments/> .
 @prefix ns2: <http://www.opengis.net/def/glossary/term/> .
@@ -465,29 +466,26 @@ JSON Schema is used to formally specify the JSON-FG syntax.
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix time: <http://www.w3.org/2006/time#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://example.com/json-fg/DENW19AL0000giv5BL> a <app:building>,
         geojson:Feature ;
-    dcterms:spatial [ a geojson:Polyhedron ;
-            geojson:coordinates ( ( ( ( ( 4.798167e+05 5.705862e+06 100 ) ( 4.798222e+05 5.705867e+06 100 ) ( 4.798297e+05 5.705859e+06 100 ) ( 4.798242e+05 5.705854e+06 100 ) ( 4.798167e+05 5.705862e+06 100 ) ) ) ( ( ( 4.798167e+05 5.705862e+06 110 ) ( 4.798242e+05 5.705854e+06 110 ) ( 4.798297e+05 5.705859e+06 120 ) ( 4.798222e+05 5.705867e+06 120 ) ( 4.798167e+05 5.705862e+06 110 ) ) ) ( ( ( 4.798167e+05 5.705862e+06 110 ) ( 4.798167e+05 5.705862e+06 100 ) ( 4.798242e+05 5.705854e+06 100 ) ( 4.798242e+05 5.705854e+06 110 ) ( 4.798167e+05 5.705862e+06 110 ) ) ) ( ( ( 4.798242e+05 5.705854e+06 110 ) ( 4.798242e+05 5.705854e+06 100 ) ( 4.798297e+05 5.705859e+06 100 ) ( 4.798297e+05 5.705859e+06 120 ) ( 4.798242e+05 5.705854e+06 110 ) ) ) ( ( ( 4.798297e+05 5.705859e+06 120 ) ( 4.798297e+05 5.705859e+06 100 ) ( 4.798222e+05 5.705867e+06 100 ) ( 4.798222e+05 5.705867e+06 120 ) ( 4.798297e+05 5.705859e+06 120 ) ) ) ( ( ( 4.798222e+05 5.705867e+06 120 ) ( 4.798222e+05 5.705867e+06 100 ) ( 4.798167e+05 5.705862e+06 100 ) ( 4.798167e+05 5.705862e+06 110 ) ( 4.798222e+05 5.705867e+06 120 ) ) ) ) ) ] ;
+    dcterms:spatial [ a <https://example.com/json-fg/Polyhedron> ] ;
     dcterms:time [ time:hasTime ( "2014-04-24T10:50:18Z" ".." ) ] ;
     ns2:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/5555" ;
-    rdfs:seeAlso [ rdfs:label "Cadastral parcel 313 in district Wünnenberg (016)" ;
-            ns1:relation <http://www.opengis.net/def/rel/ogc/1.0/within> ;
-            oa:hasTarget <https://example.org/data/v1/collections/cadastralparcel/items/05297001600313______> ],
-        [ rdfs:label "This feature is of type 'building'" ;
+    geo:hasGeometry "{\"coordinates\":[[[8.7092045,51.5035285,100],[8.7093128,51.503457,100],[8.7093919,51.503503,100],[8.7092837,51.5035747,100],[8.7092045,51.5035285,100]]],\"type\":\"Polygon\"}"^^rdf:JSON ;
+    rdfs:seeAlso [ rdfs:label "This feature is of type 'building'" ;
             ns1:relation <http://www.iana.org/assignments/relation/type> ;
-            oa:hasTarget <https://inspire.ec.europa.eu/featureconcept/Building> ] ;
-    geojson:geometry [ a geojson:Polygon ;
-            geojson:coordinates ( ( ( 8.709205e+00 5.150353e+01 100 ) ( 8.709313e+00 5.150346e+01 100 ) ( 8.709392e+00 5.15035e+01 100 ) ( 8.709284e+00 5.150357e+01 100 ) ( 8.709205e+00 5.150353e+01 100 ) ) ) ] .
+            oa:hasTarget <https://inspire.ec.europa.eu/featureconcept/Building> ],
+        [ rdfs:label "Cadastral parcel 313 in district Wünnenberg (016)" ;
+            ns1:relation <http://www.opengis.net/def/rel/ogc/1.0/within> ;
+            oa:hasTarget <https://example.org/data/v1/collections/cadastralparcel/items/05297001600313______> ] .
 
 
 ```
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/feature/example_1_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_1_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -534,8 +532,8 @@ JSON Schema is used to formally specify the JSON-FG syntax.
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/feature/example_2_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ffeature%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_2_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ffeature%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -577,14 +575,14 @@ JSON Schema is used to formally specify the JSON-FG syntax.
     "upper": 3.22
   },
   "properties": null,
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/feature/example_2_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ffeature%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_2_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ffeature%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -592,28 +590,25 @@ JSON Schema is used to formally specify the JSON-FG syntax.
 
 ```turtle
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix ns1: <http://www.opengis.net/def/glossary/term/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix time: <http://www.w3.org/2006/time#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://example.com/json-fg/fence.1> a <https://example.com/json-fg/fence>,
         geojson:Feature ;
-    dcterms:spatial [ a geojson:Prism ;
-            geojson:prismBase [ a geojson:LineString ;
-                    geojson:coordinates ( ( 8.122015e+04 4.551137e+05 ) ( 8.122315e+04 4.551167e+05 ) ) ] ;
-            geojson:prismLower 2.02e+00 ;
-            geojson:prismUpper 3.22e+00 ] ;
+    dcterms:spatial [ a <https://example.com/json-fg/Prism> ] ;
     dcterms:time [ time:hasTime ( "2022-07-12T16:55:18Z" ".." ) ] ;
-    ns1:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/7415" .
+    ns1:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/7415" ;
+    geo:hasGeometry "null"^^rdf:JSON .
 
 
 ```
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/feature/example_2_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_2_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -654,8 +649,8 @@ JSON Schema is used to formally specify the JSON-FG syntax.
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/feature/example_3_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ffeature%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_3_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ffeature%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -687,14 +682,14 @@ JSON Schema is used to formally specify the JSON-FG syntax.
     ]
   },
   "properties": {},
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/feature/example_3_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ffeature%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_3_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ffeature%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -702,25 +697,25 @@ JSON Schema is used to formally specify the JSON-FG syntax.
 
 ```turtle
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix ns1: <http://www.opengis.net/def/glossary/term/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix time: <http://www.w3.org/2006/time#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <https://example.com/json-fg/my-space-station> a <https://example.com/json-fg/space-station>,
         geojson:Feature ;
-    dcterms:spatial [ a <https://example.com/json-fg/Arc> ;
-            geojson:coordinates ( 8.122015e+04 4.551137e+05 4.414321e+04 ) ] ;
+    dcterms:spatial [ a <https://example.com/json-fg/Arc> ] ;
     dcterms:time [ time:hasTime ( "2024-05-28T10:33:24Z" ".." ) ] ;
-    ns1:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/7415" .
+    ns1:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/7415" ;
+    geo:hasGeometry "null"^^rdf:JSON .
 
 
 ```
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/feature/example_3_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_3_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -744,7 +739,7 @@ required:
 - geometry
 - properties
 allOf:
-- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
+- $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
 - properties:
     type:
       type: string
@@ -764,10 +759,10 @@ allOf:
       items:
         allOf:
         - $ref: https://beta.schemas.opengis.net/json-fg/link.json
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
       x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
     time:
-      $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml
+      $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml
       x-jsonld-id: http://purl.org/dc/terms/time
     coordRefSys:
       $ref: https://beta.schemas.opengis.net/json-fg/coordrefsys.json
@@ -777,60 +772,39 @@ allOf:
       x-jsonld-id: http://purl.org/dc/terms/spatial
     geometry:
       $ref: https://beta.schemas.opengis.net/json-fg/geometry.json
-      x-jsonld-id: https://purl.org/geojson/vocab#geometry
+      x-jsonld-id: http://www.opengis.net/ont/geosparql#hasGeometry
+      x-jsonld-type: '@json'
     properties:
       oneOf:
       - type: 'null'
       - type: object
       x-jsonld-id: '@nest'
 x-jsonld-extra-terms:
-  Feature: https://purl.org/geojson/vocab#Feature
-  FeatureCollection: https://purl.org/geojson/vocab#FeatureCollection
-  GeometryCollection: https://purl.org/geojson/vocab#GeometryCollection
-  LineString: https://purl.org/geojson/vocab#LineString
-  MultiLineString: https://purl.org/geojson/vocab#MultiLineString
-  MultiPoint: https://purl.org/geojson/vocab#MultiPoint
-  MultiPolygon: https://purl.org/geojson/vocab#MultiPolygon
-  Point: https://purl.org/geojson/vocab#Point
-  Polygon: https://purl.org/geojson/vocab#Polygon
-  Polyhedron: https://purl.org/geojson/vocab#Polyhedron
-  MultiPolyhedron: https://purl.org/geojson/vocab#MultiPolyhedron
-  Prism:
-    x-jsonld-id: https://purl.org/geojson/vocab#Prism
-    x-jsonld-context:
-      base: https://purl.org/geojson/vocab#prismBase
-      lower: https://purl.org/geojson/vocab#prismLower
-      upper: https://purl.org/geojson/vocab#prismUpper
-  MultiPrism:
-    x-jsonld-id: https://purl.org/geojson/vocab#MultiPrism
-    x-jsonld-context:
-      prisms: https://purl.org/geojson/vocab#prisms
+  Feature: geojson:Feature
+  FeatureCollection: geojson:FeatureCollection
   bbox:
     x-jsonld-container: '@list'
-    x-jsonld-id: https://purl.org/geojson/vocab#bbox
-  coordinates:
-    x-jsonld-container: '@list'
-    x-jsonld-id: https://purl.org/geojson/vocab#coordinates
+    x-jsonld-id: geojson:bbox
   features:
     x-jsonld-container: '@set'
-    x-jsonld-id: https://purl.org/geojson/vocab#features
+    x-jsonld-id: geojson:features
   geometries:
-    x-jsonld-id: https://purl.org/geojson/vocab#geometry
+    x-jsonld-id: geojson:geometry
     x-jsonld-container: '@list'
 x-jsonld-prefixes:
-  geojson: https://purl.org/geojson/vocab#
+  geo: http://www.opengis.net/ont/geosparql#
   rdfs: http://www.w3.org/2000/01/rdf-schema#
   dct: http://purl.org/dc/terms/
   owlTime: http://www.w3.org/2006/time#
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fjson-fg%2Ffeature%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fjson-fg%2Ffeature%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml</a>
-* JSON version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.json" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.json</a>
+* YAML version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml</a>
+* JSON version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.json" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.json</a>
 
 
 # JSON-LD Context
@@ -842,8 +816,14 @@ Links to the schema:
     "id": "@id",
     "properties": "@nest",
     "geometry": {
-      "@context": {},
-      "@id": "geojson:geometry"
+      "@context": {
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
+      },
+      "@id": "geo:hasGeometry",
+      "@type": "@json"
     },
     "bbox": {
       "@container": "@list",
@@ -902,26 +882,6 @@ Links to the schema:
     },
     "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
     "place": "dct:spatial",
-    "Polyhedron": "geojson:Polyhedron",
-    "MultiPolyhedron": "geojson:MultiPolyhedron",
-    "Prism": {
-      "@id": "geojson:Prism",
-      "@context": {
-        "base": "geojson:prismBase",
-        "lower": "geojson:prismLower",
-        "upper": "geojson:prismUpper"
-      }
-    },
-    "MultiPrism": {
-      "@id": "geojson:MultiPrism",
-      "@context": {
-        "prisms": "geojson:prisms"
-      }
-    },
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
-    },
     "geometries": {
       "@id": "geojson:geometry",
       "@container": "@list"
@@ -930,6 +890,7 @@ Links to the schema:
     "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
     "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
+    "geo": "http://www.opengis.net/ont/geosparql#",
     "owlTime": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "@version": 1.1
@@ -937,10 +898,10 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fjson-fg%2Ffeature%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fjson-fg%2Ffeature%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld</a>
+<a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld</a>
 
 # References
 
@@ -950,7 +911,7 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/opengeospatial/bblocks" target="_blank">https://github.com/opengeospatial/bblocks</a>
+* URL: <a href="https://github.com/rob-metalinkage/bblocks" target="_blank">https://github.com/rob-metalinkage/bblocks</a>
 * Path:
-<code><a href="https://github.com/opengeospatial/bblocks/blob/HEAD/registereditems/geo/json-fg/feature" target="_blank">registereditems/geo/json-fg/feature</a></code>
+<code><a href="https://github.com/rob-metalinkage/bblocks/blob/HEAD/registereditems/geo/json-fg/feature" target="_blank">registereditems/geo/json-fg/feature</a></code>
 

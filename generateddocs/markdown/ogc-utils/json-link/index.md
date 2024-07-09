@@ -50,8 +50,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json)
-* JSON version: [schema.json](https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml)
 
 
 # JSON-LD Context
@@ -83,7 +83,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/context.jsonld)
 
 ## Sources
 
@@ -93,6 +93,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/bblocks](https://github.com/opengeospatial/bblocks)
+* URL: [https://github.com/rob-metalinkage/bblocks](https://github.com/rob-metalinkage/bblocks)
 * Path: `registereditems/ogc-utils/json-link`
 

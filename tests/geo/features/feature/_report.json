@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.features.feature - Feature",
   "bblockName": "Feature",
   "bblockId": "ogc.geo.features.feature",
-  "generated": "2024-07-09T06:23:43.785776+00:00",
+  "generated": "2024-07-09T06:37:00.625826+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "tests/geo/features/feature/example_1_1.json",
-        "url": "https://opengeospatial.github.io/bblocks/tests/geo/features/feature/example_1_1.json",
+        "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/features/feature/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json"

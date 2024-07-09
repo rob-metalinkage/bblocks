@@ -29,7 +29,7 @@ This Building Block defines a data type for a full IRI/URI or a CURIE (with or w
 </p>
 
 <aside class="success">
-This building block is <strong><a href="https://github.com/opengeospatial/bblocks/blob/master/tests/ogc-utils/iri-or-curie/" target="_blank">valid</a></strong>
+This building block is <strong><a href="https://github.com/rob-metalinkage/bblocks/blob/master/tests/ogc-utils/iri-or-curie/" target="_blank">valid</a></strong>
 </aside>
 
 # Description
@@ -60,8 +60,8 @@ http://www.example.org/roles/myRoles?param=value#fragment
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/ogc-utils/iri-or-curie/example_1_2.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Firi-or-curie%2Fexample_1_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/ogc-utils/iri-or-curie/example_1_2.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Firi-or-curie%2Fexample_1_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -82,8 +82,8 @@ urn:isbn:9780387359731
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/ogc-utils/iri-or-curie/example_2_2.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Firi-or-curie%2Fexample_2_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/ogc-utils/iri-or-curie/example_2_2.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Firi-or-curie%2Fexample_2_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -104,8 +104,8 @@ dc:creator
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/ogc-utils/iri-or-curie/example_3_2.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Firi-or-curie%2Fexample_3_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/ogc-utils/iri-or-curie/example_3_2.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Firi-or-curie%2Fexample_3_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -126,8 +126,8 @@ relative-ref
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/ogc-utils/iri-or-curie/example_4_2.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Firi-or-curie%2Fexample_4_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/ogc-utils/iri-or-curie/example_4_2.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Firi-or-curie%2Fexample_4_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -148,8 +148,8 @@ relative-ref
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/ogc-utils/iri-or-curie/example_5_2.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Firi-or-curie%2Fexample_5_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/ogc-utils/iri-or-curie/example_5_2.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Firi-or-curie%2Fexample_5_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -180,8 +180,8 @@ another-document#ref
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/ogc-utils/iri-or-curie/example_6_2.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Firi-or-curie%2Fexample_6_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/ogc-utils/iri-or-curie/example_6_2.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Firi-or-curie%2Fexample_6_2.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -224,12 +224,12 @@ $ref: '#/$defs/Single'
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Fannotated-schemas%2Fogc-utils%2Firi-or-curie%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Fannotated-schemas%2Fogc-utils%2Firi-or-curie%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml</a>
-* JSON version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json</a>
+* YAML version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml</a>
+* JSON version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json</a>
 
 # References
 
@@ -241,7 +241,7 @@ Links to the schema:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/opengeospatial/bblocks" target="_blank">https://github.com/opengeospatial/bblocks</a>
+* URL: <a href="https://github.com/rob-metalinkage/bblocks" target="_blank">https://github.com/rob-metalinkage/bblocks</a>
 * Path:
-<code><a href="https://github.com/opengeospatial/bblocks/blob/HEAD/registereditems/ogc-utils/iri-or-curie" target="_blank">registereditems/ogc-utils/iri-or-curie</a></code>
+<code><a href="https://github.com/rob-metalinkage/bblocks/blob/HEAD/registereditems/ogc-utils/iri-or-curie" target="_blank">registereditems/ogc-utils/iri-or-curie</a></code>
 

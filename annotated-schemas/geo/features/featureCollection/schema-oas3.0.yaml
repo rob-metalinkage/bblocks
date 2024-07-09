@@ -386,19 +386,19 @@ x-defs:
       oa: http://www.w3.org/ns/oa#
       rdfs: http://www.w3.org/2000/01/rdf-schema#
       dct: http://purl.org/dc/terms/
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+    x-schema-source: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
     x-schema-version: https://json-schema.org/draft/2020-12/schema
   ogc.geo.features.feature:
     allOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson
     - type: object
       properties:
         bbox:
-          $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.bounding_box
+          $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.bounding_box
         links:
           type: array
           items:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
           x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
         type:
           enum:
@@ -411,7 +411,7 @@ x-defs:
       properties: '@nest'
     x-jsonld-prefixes:
       rdfs: http://www.w3.org/2000/01/rdf-schema#
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
+    x-schema-source: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
   ogc.geo.common.data_types.geojson:
     title: GeoJSON Feature
     type: object
@@ -827,7 +827,7 @@ x-defs:
         x-jsonld-id: https://purl.org/geojson/vocab#features
     x-jsonld-prefixes:
       geojson: https://purl.org/geojson/vocab#
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+    x-schema-source: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
     x-schema-id: https://geojson.org/schema/Feature.json
     x-schema-version: http://json-schema.org/draft-07/schema#
   ogc.geo.common.data_types.bounding_box:
@@ -839,15 +839,15 @@ x-defs:
       maxItems: 6
     items:
       type: number
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.yaml
+    x-schema-source: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.yaml
 allOf:
-- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema-oas3.0.yaml#/x-defs/FeatureCollection
+- $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema-oas3.0.yaml#/x-defs/FeatureCollection
 - type: object
   properties:
     links:
       type: array
       items:
-        $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
+        $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
       x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
     timeStamp:
       type: string
@@ -861,7 +861,7 @@ allOf:
     features:
       type: array
       items:
-        $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
+        $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
 x-jsonld-extra-terms:
   properties: '@nest'
 x-jsonld-prefixes:

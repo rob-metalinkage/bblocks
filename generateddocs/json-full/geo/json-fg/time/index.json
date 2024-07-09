@@ -8,10 +8,10 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.2.2",
-  "dateOfLastChange": "2024-05-28",
+  "dateOfLastChange": "2024-07-09",
   "schema": {
-    "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml",
-    "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json"
+    "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml",
+    "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json"
   },
   "sources": [
     {
@@ -22,13 +22,13 @@
   "scope": "geo",
   "group": "JSON-FG",
   "shaclRules": {},
-  "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld",
-  "remoteCacheDir": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/remote_cache/",
+  "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld",
+  "remoteCacheDir": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/remote_cache/",
   "sourceSchema": "https://beta.schemas.opengis.net/json-fg/time.json",
-  "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/time/context.jsonld",
-  "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/time/",
+  "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/time/context.jsonld",
+  "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/time/",
   "validationPassed": true,
-  "testOutputs": "https://github.com/opengeospatial/bblocks/blob/master/tests/geo/json-fg/time/",
+  "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/time/",
   "examples": [
     {
       "title": "Sample date (May 13th, 2024)",
@@ -36,17 +36,17 @@
         {
           "language": "json",
           "code": "{ \n  \"date\": \"2024-05-13\"\n}\n",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_1_1.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_1_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"date\": \"2024-05-13\",\n  \"@context\": \"https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld\"\n}",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_1_1.jsonld"
+          "code": "{\n  \"date\": \"2024-05-13\",\n  \"@context\": \"https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld\"\n}",
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_1_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] time:hasTime \"2024-05-13\"^^xsd:date .\n\n",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_1_1.ttl"
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_1_1.ttl"
         }
       ]
     },
@@ -56,17 +56,17 @@
         {
           "language": "json",
           "code": "{ \n  \"timestamp\": \"2024-05-13T19:15:16Z\"\n}\n",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_2_1.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_2_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"timestamp\": \"2024-05-13T19:15:16Z\",\n  \"@context\": \"https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld\"\n}",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_2_1.jsonld"
+          "code": "{\n  \"timestamp\": \"2024-05-13T19:15:16Z\",\n  \"@context\": \"https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld\"\n}",
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_2_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] time:hasTime \"2024-05-13T19:15:16+00:00\"^^xsd:dateTime .\n\n",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_2_1.ttl"
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_2_1.ttl"
         }
       ]
     },
@@ -76,17 +76,17 @@
         {
           "language": "json",
           "code": "{ \n  \"timestamp\": \"2024-05-13T19:15:16.987Z\"\n}\n",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_3_1.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_3_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"timestamp\": \"2024-05-13T19:15:16.987Z\",\n  \"@context\": \"https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld\"\n}",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_3_1.jsonld"
+          "code": "{\n  \"timestamp\": \"2024-05-13T19:15:16.987Z\",\n  \"@context\": \"https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld\"\n}",
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_3_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix time: <http://www.w3.org/2006/time#> .\n@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .\n\n[] time:hasTime \"2024-05-13T19:15:16.987000+00:00\"^^xsd:dateTime .\n\n",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_3_1.ttl"
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_3_1.ttl"
         }
       ]
     },
@@ -96,17 +96,17 @@
         {
           "language": "json",
           "code": "{ \n  \"interval\": [\n    \"2024-05-13\", \n    \"2024-05-16\"\n  ]\n}\n",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_4_1.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_4_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"interval\": [\n    \"2024-05-13\",\n    \"2024-05-16\"\n  ],\n  \"@context\": \"https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld\"\n}",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_4_1.jsonld"
+          "code": "{\n  \"interval\": [\n    \"2024-05-13\",\n    \"2024-05-16\"\n  ],\n  \"@context\": \"https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld\"\n}",
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_4_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n\n[] time:hasTime ( \"2024-05-13\" \"2024-05-16\" ) .\n\n",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_4_1.ttl"
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_4_1.ttl"
         }
       ]
     },
@@ -116,22 +116,22 @@
         {
           "language": "json",
           "code": "{ \n  \"interval\": [\n    \"2024-05-13T19:15:16Z\",\n    \"..\"\n  ]\n}\n",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_5_1.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_5_1.json"
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"interval\": [\n    \"2024-05-13T19:15:16Z\",\n    \"..\"\n  ],\n  \"@context\": \"https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld\"\n}",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_5_1.jsonld"
+          "code": "{\n  \"interval\": [\n    \"2024-05-13T19:15:16Z\",\n    \"..\"\n  ],\n  \"@context\": \"https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld\"\n}",
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_5_1.jsonld"
         },
         {
           "language": "ttl",
           "code": "@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n\n[] time:hasTime ( \"2024-05-13T19:15:16Z\" \"..\" ) .\n\n",
-          "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_5_1.ttl"
+          "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_5_1.ttl"
         }
       ]
     }
   ],
   "annotatedSchema": "$schema: https://json-schema.org/draft/2020-12/schema\n$id: https://beta.schemas.opengis.net/json-fg/time.json\ntitle: the time member\ndescription: This JSON Schema is part of JSON-FG version 0.2.2\noneOf:\n- type: 'null'\n- type: object\n  properties:\n    date:\n      $ref: '#/$defs/date'\n      x-jsonld-id: http://www.w3.org/2006/time#hasTime\n      x-jsonld-type: http://www.w3.org/2001/XMLSchema#date\n    timestamp:\n      $ref: '#/$defs/timestamp'\n      x-jsonld-id: http://www.w3.org/2006/time#hasTime\n      x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime\n    interval:\n      $ref: '#/$defs/interval'\n      x-jsonld-id: http://www.w3.org/2006/time#hasTime\n      x-jsonld-container: '@list'\n$defs:\n  date:\n    type: string\n    pattern: ^\\d{4}-\\d{2}-\\d{2}$\n  timestamp:\n    type: string\n    pattern: ^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d+)?Z$\n  interval:\n    type: array\n    minItems: 2\n    maxItems: 2\n    items:\n      oneOf:\n      - $ref: '#/$defs/date'\n      - $ref: '#/$defs/timestamp'\n      - type: string\n        enum:\n        - ..\nx-jsonld-prefixes:\n  time: http://www.w3.org/2006/time#\n  xsd: http://www.w3.org/2001/XMLSchema#\n",
-  "gitRepository": "https://github.com/opengeospatial/bblocks",
+  "gitRepository": "https://github.com/rob-metalinkage/bblocks",
   "gitPath": "registereditems/geo/json-fg/time"
 }

@@ -53,7 +53,7 @@
       "x-jsonld-id": "http://example.com/geopose/position",
       "allOf": [
         {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema-oas3.0.json#/definitions/Position"
+          "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema-oas3.0.json#/definitions/Position"
         }
       ]
     },
@@ -61,7 +61,7 @@
       "x-jsonld-id": "http://example.com/geopose/angles",
       "allOf": [
         {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema-oas3.0.json#/definitions/angles"
+          "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema-oas3.0.json#/definitions/angles"
         }
       ]
     }

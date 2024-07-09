@@ -79,12 +79,12 @@ explode: false
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fcommon%2Fparameters%2Fbbox-crs%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fcommon%2Fparameters%2Fbbox-crs%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.yaml" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.yaml</a>
-* JSON version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.json" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.json</a>
+* YAML version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.yaml" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.yaml</a>
+* JSON version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.json" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.json</a>
 
 # References
 
@@ -94,7 +94,7 @@ Links to the schema:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/opengeospatial/bblocks" target="_blank">https://github.com/opengeospatial/bblocks</a>
+* URL: <a href="https://github.com/rob-metalinkage/bblocks" target="_blank">https://github.com/rob-metalinkage/bblocks</a>
 * Path:
-<code><a href="https://github.com/opengeospatial/bblocks/blob/HEAD/registereditems/geo/common/parameters/bbox-crs" target="_blank">registereditems/geo/common/parameters/bbox-crs</a></code>
+<code><a href="https://github.com/rob-metalinkage/bblocks/blob/HEAD/registereditems/geo/common/parameters/bbox-crs" target="_blank">registereditems/geo/common/parameters/bbox-crs</a></code>
 

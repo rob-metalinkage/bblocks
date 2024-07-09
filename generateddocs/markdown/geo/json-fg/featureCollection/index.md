@@ -76,7 +76,7 @@ NB. uses a local @context in the data example where application specialisations 
 ```jsonld
 {
   "@context": [
-    "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/context.jsonld",
+    "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/context.jsonld",
     {
       "my": "http://my.org/featureTypes/",
       "skos": "http://www.w3.org/2004/02/skos/core#",
@@ -112,12 +112,12 @@ NB. uses a local @context in the data example where application specialisations 
 #### ttl
 ```ttl
 @prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
 @prefix my: <http://my.org/featureTypes/> .
 @prefix ns1: <http://www.opengis.net/def/glossary/term/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 <http://www.example.com/features/MyFeatureCollection> a geojson:FeatureCollection ;
     skos:prefLabel "MyFeatureCollection" ;
@@ -125,9 +125,9 @@ NB. uses a local @context in the data example where application specialisations 
 
 <http://www.example.com/features/f1> a my:FeatureType,
         geojson:Feature ;
-    dcterms:spatial [ a geojson:Point ;
-            geojson:coordinates ( 1.747502e+02 -3.693074e+01 ) ] ;
-    ns1:CoordinateReferenceSystemCRS "EPSG" .
+    dcterms:spatial [ a geojson:Point ] ;
+    ns1:CoordinateReferenceSystemCRS "EPSG" ;
+    geo:hasGeometry "null"^^rdf:JSON .
 
 
 ```
@@ -143,7 +143,7 @@ required:
 - type
 - features
 allOf:
-- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
+- $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
 - properties:
     type:
       type: string
@@ -164,12 +164,12 @@ allOf:
       items:
         allOf:
         - $ref: https://beta.schemas.opengis.net/json-fg/link.json
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
       x-jsonld-id: rdfs:seeAlso
     features:
       type: array
       items:
-        $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml
+        $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml
       x-jsonld-container: '@set'
       x-jsonld-id: https://purl.org/geojson/vocab#features
 x-jsonld-prefixes:
@@ -179,8 +179,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema.json)
-* JSON version: [schema.json](https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema.yaml)
 
 
 # JSON-LD Context
@@ -212,7 +212,12 @@ Links to the schema:
     "id": "@id",
     "properties": "@nest",
     "geometry": {
-      "@context": {},
+      "@context": {
+        "coordinates": {
+          "@container": "@list",
+          "@id": "geojson:coordinates"
+        }
+      },
       "@id": "geojson:geometry"
     },
     "bbox": {
@@ -232,6 +237,16 @@ Links to the schema:
       "@container": "@set",
       "@id": "geojson:features",
       "@context": {
+        "geometry": {
+          "@context": {
+            "coordinates": {
+              "@container": "@list",
+              "@id": "geojson:coordinates"
+            }
+          },
+          "@id": "geo:hasGeometry",
+          "@type": "@json"
+        },
         "links": {
           "@context": {
             "href": {
@@ -275,26 +290,6 @@ Links to the schema:
       }
     },
     "featureType": "geojson:collectionFeatureType",
-    "Polyhedron": "geojson:Polyhedron",
-    "MultiPolyhedron": "geojson:MultiPolyhedron",
-    "Prism": {
-      "@id": "geojson:Prism",
-      "@context": {
-        "base": "geojson:prismBase",
-        "lower": "geojson:prismLower",
-        "upper": "geojson:prismUpper"
-      }
-    },
-    "MultiPrism": {
-      "@id": "geojson:MultiPrism",
-      "@context": {
-        "prisms": "geojson:prisms"
-      }
-    },
-    "coordinates": {
-      "@container": "@list",
-      "@id": "geojson:coordinates"
-    },
     "geometries": {
       "@id": "geojson:geometry",
       "@container": "@list"
@@ -303,6 +298,7 @@ Links to the schema:
     "oa": "http://www.w3.org/ns/oa#",
     "dct": "http://purl.org/dc/terms/",
     "geojson": "https://purl.org/geojson/vocab#",
+    "geo": "http://www.opengis.net/ont/geosparql#",
     "owlTime": "http://www.w3.org/2006/time#",
     "time": "http://www.w3.org/2006/time#",
     "xsd": "http://www.w3.org/2001/XMLSchema#",
@@ -312,7 +308,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/context.jsonld)
 
 ## Sources
 
@@ -322,6 +318,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/bblocks](https://github.com/opengeospatial/bblocks)
+* URL: [https://github.com/rob-metalinkage/bblocks](https://github.com/rob-metalinkage/bblocks)
 * Path: `registereditems/geo/json-fg/featureCollection`
 

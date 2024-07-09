@@ -30,7 +30,7 @@ Demonstration of a schema using coordinates of points, withpout duplication
 </p>
 
 <aside class="success">
-This building block is <strong><a href="https://github.com/opengeospatial/bblocks/blob/master/tests/ogc-utils/topology/" target="_blank">valid</a></strong>
+This building block is <strong><a href="https://github.com/rob-metalinkage/bblocks/blob/master/tests/ogc-utils/topology/" target="_blank">valid</a></strong>
 </aside>
 
 # Description
@@ -60,8 +60,8 @@ This is a generalisation of the TopoJSON concept using inline data, and not limi
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/ogc-utils/topology/example_1_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Ftopology%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/ogc-utils/topology/example_1_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Ftopology%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -74,14 +74,14 @@ This is a generalisation of the TopoJSON concept using inline data, and not limi
     "P1",
     "P2"
   ],
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/ogc-utils/topology/example_1_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Ftopology%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/ogc-utils/topology/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fogc-utils%2Ftopology%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -99,7 +99,7 @@ This is a generalisation of the TopoJSON concept using inline data, and not limi
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/ogc-utils/topology/example_1_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/ogc-utils/topology/example_1_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -113,12 +113,12 @@ $schema: https://json-schema.org/draft/2020-12/schema
 description: feature with geometry by reference
 properties:
   type:
-    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+    $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
     x-jsonld-id: '@type'
   references:
     type: array
     items:
-      $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
+      $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml
     x-jsonld-id: https://purl.org/geojson/vocab#relatedFeatures
     x-jsonld-type: '@id'
     x-jsonld-container: '@list'
@@ -134,12 +134,12 @@ x-jsonld-prefixes:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Fannotated-schemas%2Fogc-utils%2Ftopology%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Fannotated-schemas%2Fogc-utils%2Ftopology%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.yaml" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.yaml</a>
-* JSON version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.json" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.json</a>
+* YAML version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.yaml" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.yaml</a>
+* JSON version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.json" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.json</a>
 
 
 # JSON-LD Context
@@ -162,16 +162,16 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Fannotated-schemas%2Fogc-utils%2Ftopology%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Fannotated-schemas%2Fogc-utils%2Ftopology%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld</a>
+<a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld</a>
 
 # For developers
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/opengeospatial/bblocks" target="_blank">https://github.com/opengeospatial/bblocks</a>
+* URL: <a href="https://github.com/rob-metalinkage/bblocks" target="_blank">https://github.com/rob-metalinkage/bblocks</a>
 * Path:
-<code><a href="https://github.com/opengeospatial/bblocks/blob/HEAD/registereditems/ogc-utils/topology" target="_blank">registereditems/ogc-utils/topology</a></code>
+<code><a href="https://github.com/rob-metalinkage/bblocks/blob/HEAD/registereditems/ogc-utils/topology" target="_blank">registereditems/ogc-utils/topology</a></code>
 

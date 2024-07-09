@@ -30,7 +30,7 @@ None
 </p>
 
 <aside class="success">
-This building block is <strong><a href="https://github.com/opengeospatial/bblocks/blob/master/tests/geo/json-fg/time/" target="_blank">valid</a></strong>
+This building block is <strong><a href="https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/time/" target="_blank">valid</a></strong>
 </aside>
 
 # Examples
@@ -48,8 +48,8 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_1_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_1_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_1_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -58,14 +58,14 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 ```jsonld
 {
   "date": "2024-05-13",
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_1_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_1_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_1_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -82,7 +82,7 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_1_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_1_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -100,8 +100,8 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_2_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_2_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_2_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -110,14 +110,14 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 ```jsonld
 {
   "timestamp": "2024-05-13T19:15:16Z",
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_2_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_2_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_2_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -134,7 +134,7 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_2_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_2_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -152,8 +152,8 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_3_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_3_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_3_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -162,14 +162,14 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 ```jsonld
 {
   "timestamp": "2024-05-13T19:15:16.987Z",
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_3_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_3_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_3_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -186,7 +186,7 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_3_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_3_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -207,8 +207,8 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_4_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_4_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_4_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_4_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -220,14 +220,14 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
     "2024-05-13",
     "2024-05-16"
   ],
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_4_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_4_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_4_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_4_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -244,7 +244,7 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_4_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_4_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -265,8 +265,8 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 
 <blockquote class="lang-specific json">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_5_1.json">Open in new window</a>
-    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_5_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_5_1.json">Open in new window</a>
+    <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=json&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_5_1.json&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on JSON Viewer</a></p>
 </blockquote>
 
 
@@ -278,14 +278,14 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
     "2024-05-13T19:15:16Z",
     ".."
   ],
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
 }
 ```
 
 <blockquote class="lang-specific jsonld">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_5_1.jsonld">Open in new window</a>
-    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_5_1.jsonld">View on JSON-LD Playground</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_5_1.jsonld">Open in new window</a>
+    <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Ftests%2Fgeo%2Fjson-fg%2Ftime%2Fexample_5_1.jsonld">View on JSON-LD Playground</a>
 </blockquote>
 
 
@@ -302,7 +302,7 @@ This building block is <strong><a href="https://github.com/opengeospatial/bblock
 
 <blockquote class="lang-specific turtle">
   <p class="example-links">
-    <a target="_blank" href="https://opengeospatial.github.io/bblocks/tests/geo/json-fg/time/example_5_1.ttl">Open in new window</a>
+    <a target="_blank" href="https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/time/example_5_1.ttl">Open in new window</a>
 </blockquote>
 
 
@@ -354,12 +354,12 @@ x-jsonld-prefixes:
 
 ```
 
-> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fjson-fg%2Ftime%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
+> <a target="_blank" href="https://avillar.github.io/TreedocViewer/?dataParser=yaml&amp;dataUrl=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fjson-fg%2Ftime%2Fschema.yaml&amp;expand=2&amp;option=%7B%22showTable%22%3A+false%7D">View on YAML Viewer</a>
 
 Links to the schema:
 
-* YAML version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml</a>
-* JSON version: <a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json</a>
+* YAML version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml</a>
+* JSON version: <a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json</a>
 
 
 # JSON-LD Context
@@ -386,10 +386,10 @@ Links to the schema:
 }
 ```
 
-> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Fopengeospatial.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fjson-fg%2Ftime%2Fcontext.jsonld">View on JSON-LD Playground</a>
+> <a target="_blank" href="https://json-ld.org/playground/#json-ld=https%3A%2F%2Frob-metalinkage.github.io%2Fbblocks%2Fannotated-schemas%2Fgeo%2Fjson-fg%2Ftime%2Fcontext.jsonld">View on JSON-LD Playground</a>
 
 You can find the full JSON-LD context here:
-<a href="https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld" target="_blank">https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld</a>
+<a href="https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld" target="_blank">https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld</a>
 
 # References
 
@@ -399,7 +399,7 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: <a href="https://github.com/opengeospatial/bblocks" target="_blank">https://github.com/opengeospatial/bblocks</a>
+* URL: <a href="https://github.com/rob-metalinkage/bblocks" target="_blank">https://github.com/rob-metalinkage/bblocks</a>
 * Path:
-<code><a href="https://github.com/opengeospatial/bblocks/blob/HEAD/registereditems/geo/json-fg/time" target="_blank">registereditems/geo/json-fg/time</a></code>
+<code><a href="https://github.com/rob-metalinkage/bblocks/blob/HEAD/registereditems/geo/json-fg/time" target="_blank">registereditems/geo/json-fg/time</a></code>
 

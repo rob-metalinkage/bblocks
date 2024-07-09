@@ -1,13 +1,13 @@
 x-defs:
   ogc.geo.features.featureCollection:
     allOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/FeatureCollection
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/FeatureCollection
     - type: object
       properties:
         links:
           type: array
           items:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
           x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
         timeStamp:
           type: string
@@ -21,12 +21,12 @@ x-defs:
         features:
           type: array
           items:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
     x-jsonld-extra-terms:
       properties: '@nest'
     x-jsonld-prefixes:
       rdfs: http://www.w3.org/2000/01/rdf-schema#
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
+    x-schema-source: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml
   featuretype:
     title: the featureType member
     description: This JSON Schema is part of JSON-FG version 0.2.2
@@ -42,17 +42,17 @@ x-defs:
     title: the coordRefSys member
     description: This JSON Schema is part of JSON-FG version 0.2.2
     oneOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys/$defs/single-refsys
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys/$defs/single-refsys
     - type: array
       items:
-        $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys/$defs/single-refsys
+        $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys/$defs/single-refsys
       minItems: 2
     $defs:
       single-refsys:
         oneOf:
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys/$defs/refsys-simpleref
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys/$defs/refsys-byref
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys/$defs/refsys-custom
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys/$defs/refsys-simpleref
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys/$defs/refsys-byref
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys/$defs/refsys-custom
       refsys-simpleref:
         type: string
         description: The value is either a URI or a CURIE.
@@ -147,7 +147,7 @@ x-defs:
       oa: http://www.w3.org/ns/oa#
       rdfs: http://www.w3.org/2000/01/rdf-schema#
       dct: http://purl.org/dc/terms/
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
+    x-schema-source: https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml
     x-schema-version: https://json-schema.org/draft/2020-12/schema
   ogc.geo.json-fg.feature:
     title: a JSON-FG Feature
@@ -160,7 +160,7 @@ x-defs:
     - geometry
     - properties
     allOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.features.feature
     - properties:
         type:
           type: string
@@ -175,75 +175,54 @@ x-defs:
         featureType:
           x-jsonld-id: '@type'
           allOf:
-          - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/featuretype
+          - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/featuretype
         links:
           type: array
           items:
             allOf:
-            - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/link
-            - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
+            - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/link
+            - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
           x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
         time:
           x-jsonld-id: http://purl.org/dc/terms/time
           allOf:
-          - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.time
+          - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.time
         coordRefSys:
           x-jsonld-id: http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS
           allOf:
-          - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+          - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
         place:
           x-jsonld-id: http://purl.org/dc/terms/spatial
           allOf:
-          - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/place
+          - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/place
         geometry:
-          x-jsonld-id: https://purl.org/geojson/vocab#geometry
+          x-jsonld-id: http://www.opengis.net/ont/geosparql#hasGeometry
+          x-jsonld-type: '@json'
           allOf:
-          - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry
+          - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry
         properties:
           oneOf:
           - type: object
           x-jsonld-id: '@nest'
           nullable: true
     x-jsonld-extra-terms:
-      Feature: https://purl.org/geojson/vocab#Feature
-      FeatureCollection: https://purl.org/geojson/vocab#FeatureCollection
-      GeometryCollection: https://purl.org/geojson/vocab#GeometryCollection
-      LineString: https://purl.org/geojson/vocab#LineString
-      MultiLineString: https://purl.org/geojson/vocab#MultiLineString
-      MultiPoint: https://purl.org/geojson/vocab#MultiPoint
-      MultiPolygon: https://purl.org/geojson/vocab#MultiPolygon
-      Point: https://purl.org/geojson/vocab#Point
-      Polygon: https://purl.org/geojson/vocab#Polygon
-      Polyhedron: https://purl.org/geojson/vocab#Polyhedron
-      MultiPolyhedron: https://purl.org/geojson/vocab#MultiPolyhedron
-      Prism:
-        x-jsonld-id: https://purl.org/geojson/vocab#Prism
-        x-jsonld-context:
-          base: https://purl.org/geojson/vocab#prismBase
-          lower: https://purl.org/geojson/vocab#prismLower
-          upper: https://purl.org/geojson/vocab#prismUpper
-      MultiPrism:
-        x-jsonld-id: https://purl.org/geojson/vocab#MultiPrism
-        x-jsonld-context:
-          prisms: https://purl.org/geojson/vocab#prisms
+      Feature: geojson:Feature
+      FeatureCollection: geojson:FeatureCollection
       bbox:
         x-jsonld-container: '@list'
-        x-jsonld-id: https://purl.org/geojson/vocab#bbox
-      coordinates:
-        x-jsonld-container: '@list'
-        x-jsonld-id: https://purl.org/geojson/vocab#coordinates
+        x-jsonld-id: geojson:bbox
       features:
         x-jsonld-container: '@set'
-        x-jsonld-id: https://purl.org/geojson/vocab#features
+        x-jsonld-id: geojson:features
       geometries:
-        x-jsonld-id: https://purl.org/geojson/vocab#geometry
+        x-jsonld-id: geojson:geometry
         x-jsonld-container: '@list'
     x-jsonld-prefixes:
-      geojson: https://purl.org/geojson/vocab#
+      geo: http://www.opengis.net/ont/geosparql#
       rdfs: http://www.w3.org/2000/01/rdf-schema#
       dct: http://purl.org/dc/terms/
       owlTime: http://www.w3.org/2006/time#
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml
+    x-schema-source: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml
     x-schema-version: https://json-schema.org/draft/2019-09/schema
   FeatureCollection:
     title: GeoJSON FeatureCollection
@@ -599,15 +578,15 @@ x-defs:
     x-schema-version: http://json-schema.org/draft-07/schema#
   ogc.geo.features.feature:
     allOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.geojson
     - type: object
       properties:
         bbox:
-          $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.bounding_box
+          $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.common.data_types.bounding_box
         links:
           type: array
           items:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
           x-jsonld-id: http://www.w3.org/2000/01/rdf-schema#seeAlso
         type:
           enum:
@@ -620,7 +599,7 @@ x-defs:
       properties: '@nest'
     x-jsonld-prefixes:
       rdfs: http://www.w3.org/2000/01/rdf-schema#
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
+    x-schema-source: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml
   ogc.geo.json-fg.time:
     title: the time member
     description: This JSON Schema is part of JSON-FG version 0.2.2
@@ -631,17 +610,17 @@ x-defs:
           x-jsonld-id: http://www.w3.org/2006/time#hasTime
           x-jsonld-type: http://www.w3.org/2001/XMLSchema#date
           allOf:
-          - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.time/$defs/date
+          - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.time/$defs/date
         timestamp:
           x-jsonld-id: http://www.w3.org/2006/time#hasTime
           x-jsonld-type: http://www.w3.org/2001/XMLSchema#dateTime
           allOf:
-          - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.time/$defs/timestamp
+          - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.time/$defs/timestamp
         interval:
           x-jsonld-id: http://www.w3.org/2006/time#hasTime
           x-jsonld-container: '@list'
           allOf:
-          - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.time/$defs/interval
+          - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.time/$defs/interval
     $defs:
       date:
         type: string
@@ -655,15 +634,15 @@ x-defs:
         maxItems: 2
         items:
           oneOf:
-          - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.time/$defs/date
-          - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.time/$defs/timestamp
+          - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.time/$defs/date
+          - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.time/$defs/timestamp
           - type: string
             enum:
             - ..
     x-jsonld-prefixes:
       time: http://www.w3.org/2006/time#
       xsd: http://www.w3.org/2001/XMLSchema#
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml
+    x-schema-source: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml
     x-schema-id: https://beta.schemas.opengis.net/json-fg/time.json
     x-schema-version: https://json-schema.org/draft/2020-12/schema
     nullable: true
@@ -671,17 +650,17 @@ x-defs:
     title: the place member
     description: This JSON Schema is part of JSON-FG version 0.2.2
     oneOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Point
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPoint
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/LineString
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiLineString
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Polygon
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPolygon
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Polyhedron
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPolyhedron
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Prism
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPrism
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/CustomGeometry
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Point
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPoint
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/LineString
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiLineString
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Polygon
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPolygon
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Polyhedron
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPolyhedron
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Prism
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPrism
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/CustomGeometry
     x-schema-source: https://beta.schemas.opengis.net/json-fg/place.json
     x-schema-id: https://beta.schemas.opengis.net/json-fg/place.json
     x-schema-version: https://json-schema.org/draft/2020-12/schema
@@ -690,13 +669,13 @@ x-defs:
     title: the geometry member
     description: This JSON Schema is part of JSON-FG version 0.2.2
     oneOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Point
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPoint
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/LineString
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiLineString
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Polygon
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPolygon
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/GeometryCollection
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Point
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPoint
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/LineString
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiLineString
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Polygon
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPolygon
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/GeometryCollection
     x-schema-source: https://beta.schemas.opengis.net/json-fg/geometry.json
     x-schema-id: https://beta.schemas.opengis.net/json-fg/geometry.json
     x-schema-version: https://json-schema.org/draft/2020-12/schema
@@ -1116,7 +1095,7 @@ x-defs:
         x-jsonld-id: https://purl.org/geojson/vocab#features
     x-jsonld-prefixes:
       geojson: https://purl.org/geojson/vocab#
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
+    x-schema-source: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml
     x-schema-id: https://geojson.org/schema/Feature.json
     x-schema-version: http://json-schema.org/draft-07/schema#
   ogc.geo.common.data_types.bounding_box:
@@ -1128,7 +1107,7 @@ x-defs:
       maxItems: 6
     items:
       type: number
-    x-schema-source: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.yaml
+    x-schema-source: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.yaml
   geometry-objects:
     title: the geometry objects
     description: This JSON Schema is part of JSON-FG version 0.2.2
@@ -1166,11 +1145,11 @@ x-defs:
             enum:
             - Point
           coordRefSys:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
           coordinates:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position
           bbox:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
       LineString:
         title: GeoJSON LineString with additional 'coordRefSys' member
         type: object
@@ -1183,14 +1162,14 @@ x-defs:
             enum:
             - LineString
           coordRefSys:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
           coordinates:
             type: array
             minItems: 2
             items:
-              $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position
+              $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position
           bbox:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
       Polygon:
         title: GeoJSON Polygon with additional 'coordRefSys' member
         type: object
@@ -1203,16 +1182,16 @@ x-defs:
             enum:
             - Polygon
           coordRefSys:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
           coordinates:
             type: array
             items:
               type: array
               minItems: 4
               items:
-                $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position
+                $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position
           bbox:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
       MultiPoint:
         title: GeoJSON MultiPoint with additional 'coordRefSys' member
         type: object
@@ -1225,13 +1204,13 @@ x-defs:
             enum:
             - MultiPoint
           coordRefSys:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
           coordinates:
             type: array
             items:
-              $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position
+              $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position
           bbox:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
       MultiLineString:
         title: GeoJSON MultiLineString with additional 'coordRefSys' member
         type: object
@@ -1244,16 +1223,16 @@ x-defs:
             enum:
             - MultiLineString
           coordRefSys:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
           coordinates:
             type: array
             items:
               type: array
               minItems: 2
               items:
-                $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position
+                $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position
           bbox:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
       MultiPolygon:
         title: GeoJSON MultiPolygon with additional 'coordRefSys' member
         type: object
@@ -1266,7 +1245,7 @@ x-defs:
             enum:
             - MultiPolygon
           coordRefSys:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
           coordinates:
             type: array
             items:
@@ -1275,9 +1254,9 @@ x-defs:
                 type: array
                 minItems: 4
                 items:
-                  $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position
+                  $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position
           bbox:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
       Polyhedron:
         title: JSON-FG Polyhedron
         type: object
@@ -1290,7 +1269,7 @@ x-defs:
             enum:
             - Polyhedron
           coordRefSys:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
           coordinates:
             type: array
             minItems: 1
@@ -1304,9 +1283,9 @@ x-defs:
                   type: array
                   minItems: 4
                   items:
-                    $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position3d
+                    $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position3d
           bbox:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox3d
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox3d
       MultiPolyhedron:
         title: JSON-FG MultiPolyhedron
         type: object
@@ -1319,7 +1298,7 @@ x-defs:
             enum:
             - MultiPolyhedron
           coordRefSys:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
           coordinates:
             type: array
             items:
@@ -1335,9 +1314,9 @@ x-defs:
                     type: array
                     minItems: 4
                     items:
-                      $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position3d
+                      $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/position3d
           bbox:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox3d
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox3d
       Prism:
         title: JSON-FG Prism
         type: object
@@ -1351,21 +1330,21 @@ x-defs:
             enum:
             - Prism
           coordRefSys:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
           base:
             oneOf:
-            - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Point
-            - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/LineString
-            - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Polygon
-            - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPoint
-            - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiLineString
-            - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPolygon
+            - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Point
+            - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/LineString
+            - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Polygon
+            - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPoint
+            - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiLineString
+            - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPolygon
           lower:
             type: number
           upper:
             type: number
           bbox:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox3d
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox3d
       MultiPrism:
         title: JSON-FG Multi-Prism
         type: object
@@ -1378,13 +1357,13 @@ x-defs:
             enum:
             - MultiPrism
           coordRefSys:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
           prisms:
             type: array
             items:
-              $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Prism
+              $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Prism
           bbox:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox3d
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox3d
       GeometryCollection:
         title: GeoJSON GeometryCollection with additional 'coordRefSys' member
         type: object
@@ -1397,19 +1376,19 @@ x-defs:
             enum:
             - GeometryCollection
           coordRefSys:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
           geometries:
             type: array
             items:
               oneOf:
-              - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Point
-              - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPoint
-              - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/LineString
-              - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiLineString
-              - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Polygon
-              - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPolygon
+              - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Point
+              - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPoint
+              - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/LineString
+              - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiLineString
+              - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/Polygon
+              - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/MultiPolygon
           bbox:
-            $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
+            $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox
       position:
         type: array
         minItems: 2
@@ -1424,8 +1403,8 @@ x-defs:
           type: number
       bbox:
         oneOf:
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox2d
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox3d
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox2d
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/geometry-objects/$defs/bbox3d
       bbox2d:
         type: array
         minItems: 4
@@ -1448,7 +1427,7 @@ required:
 - type
 - features
 allOf:
-- $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.features.featureCollection
+- $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.features.featureCollection
 - properties:
     type:
       type: string
@@ -1458,24 +1437,24 @@ allOf:
     featureType:
       x-jsonld-id: https://purl.org/geojson/vocab#collectionFeatureType
       allOf:
-      - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/featuretype
+      - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/featuretype
     geometryDimension:
       type: integer
       minimum: 0
       maximum: 3
     coordRefSys:
-      $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
+      $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/coordrefsys
     links:
       type: array
       items:
         allOf:
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/link
-        - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/link
+        - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.ogc-utils.json-link
       x-jsonld-id: rdfs:seeAlso
     features:
       type: array
       items:
-        $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.feature
+        $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema-oas3.0.yaml#/x-defs/ogc.geo.json-fg.feature
       x-jsonld-container: '@set'
       x-jsonld-id: https://purl.org/geojson/vocab#features
 x-jsonld-prefixes:

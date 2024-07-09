@@ -17,25 +17,25 @@
     "Single": {
       "anyOf": [
         {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/IRI"
+          "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/IRI"
         },
         {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/CURIE"
+          "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/CURIE"
         },
         {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/LocalPart"
+          "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/LocalPart"
         }
       ]
     },
     "Multiple": {
       "oneOf": [
         {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/Single"
+          "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/Single"
         },
         {
           "type": "array",
           "items": {
-            "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/Single"
+            "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/Single"
           }
         }
       ]
@@ -43,7 +43,7 @@
     "MultipleOrObject": {
       "oneOf": [
         {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/Multiple"
+          "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/Multiple"
         },
         {
           "type": "object"
@@ -53,7 +53,7 @@
     "MultipleOrObjectOrNull": {
       "oneOf": [
         {
-          "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/MultipleOrObject"
+          "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/MultipleOrObject"
         }
       ],
       "nullable": true
@@ -62,7 +62,7 @@
   "x-schema-version": "https://json-schema.org/draft/2020-12/schema",
   "allOf": [
     {
-      "$ref": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/Single"
+      "$ref": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema-oas3.0.json#/$defs/Single"
     }
   ]
 }

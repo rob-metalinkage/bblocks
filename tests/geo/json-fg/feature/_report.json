@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.json-fg.feature - JSON-FG Feature",
   "bblockName": "JSON-FG Feature",
   "bblockId": "ogc.geo.json-fg.feature",
-  "generated": "2024-07-09T06:23:44.292647+00:00",
+  "generated": "2024-07-09T06:37:01.436577+00:00",
   "result": true,
   "items": [
     {
@@ -10,7 +10,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "tests/geo/json-fg/feature/example_1_1.json",
-        "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/feature/example_1_1.json",
+        "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
         "language": "json",
@@ -46,7 +46,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_1_1.ttl",
-              "size": 331,
+              "size": 20,
               "isError": false,
               "message": "Output Turtle example_1_1.ttl created"
             }
@@ -91,7 +91,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "tests/geo/json-fg/feature/example_2_1.json",
-        "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/feature/example_2_1.json",
+        "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_2_1.json",
         "exampleIndex": 2,
         "snippetIndex": 1,
         "language": "json",
@@ -127,7 +127,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_2_1.ttl",
-              "size": 28,
+              "size": 12,
               "isError": false,
               "message": "Output Turtle example_2_1.ttl created"
             }
@@ -172,7 +172,7 @@
         "type": "EXAMPLE",
         "requireFail": false,
         "filename": "tests/geo/json-fg/feature/example_3_1.json",
-        "url": "https://opengeospatial.github.io/bblocks/tests/geo/json-fg/feature/example_3_1.json",
+        "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_3_1.json",
         "exampleIndex": 3,
         "snippetIndex": 1,
         "language": "json"
@@ -207,7 +207,7 @@
               "op": "ttl-create",
               "empty": false,
               "filename": "example_3_1.ttl",
-              "size": 18,
+              "size": 12,
               "isError": false,
               "message": "Output Turtle example_3_1.ttl created"
             }

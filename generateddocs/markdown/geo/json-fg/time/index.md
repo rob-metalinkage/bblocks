@@ -22,7 +22,7 @@ None
 ```jsonld
 {
   "date": "2024-05-13",
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
 }
 ```
 
@@ -50,7 +50,7 @@ None
 ```jsonld
 {
   "timestamp": "2024-05-13T19:15:16Z",
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
 }
 ```
 
@@ -78,7 +78,7 @@ None
 ```jsonld
 {
   "timestamp": "2024-05-13T19:15:16.987Z",
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
 }
 ```
 
@@ -112,7 +112,7 @@ None
     "2024-05-13",
     "2024-05-16"
   ],
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
 }
 ```
 
@@ -146,7 +146,7 @@ None
     "2024-05-13T19:15:16Z",
     ".."
   ],
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld"
 }
 ```
 
@@ -209,8 +209,8 @@ x-jsonld-prefixes:
 
 Links to the schema:
 
-* YAML version: [schema.yaml](https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json)
-* JSON version: [schema.json](https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml)
+* YAML version: [schema.yaml](https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json)
+* JSON version: [schema.json](https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml)
 
 
 # JSON-LD Context
@@ -238,7 +238,7 @@ Links to the schema:
 ```
 
 You can find the full JSON-LD context here:
-[context.jsonld](https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld)
+[context.jsonld](https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld)
 
 ## Sources
 
@@ -248,6 +248,6 @@ You can find the full JSON-LD context here:
 
 The source code for this Building Block can be found in the following repository:
 
-* URL: [https://github.com/opengeospatial/bblocks](https://github.com/opengeospatial/bblocks)
+* URL: [https://github.com/rob-metalinkage/bblocks](https://github.com/rob-metalinkage/bblocks)
 * Path: `registereditems/geo/json-fg/time`
 

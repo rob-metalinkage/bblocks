@@ -11,5 +11,5 @@
   "properties": {
     "comment": "An attribute value"
   },
-  "@context": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/context.jsonld"
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/context.jsonld"
 }

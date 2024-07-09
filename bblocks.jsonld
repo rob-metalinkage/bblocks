@@ -1,7 +1,7 @@
 {
   "@context": [
     {
-      "@base": "https://opengeospatial.github.io/bblocks"
+      "@base": "https://rob-metalinkage.github.io/bblocks"
     },
     {
       "bblocks": "https://www.opengis.net/def/bblocks/",
@@ -106,7 +106,7 @@
   "name": "Building Blocks - OGC Main",
   "description": "\nThe OGC Building Blocks register provides an overview of a series of building blocks managed by the OGC community through a variety of processes:\n\n- formal standards publication processes the Standards Working Groups\n- agreements with other standards bodies (eg. ISO)\n- community hosted examples of re-use (profiles and extensions of OGC standards)\n- informal \"incubator\" processes where more than one project needs a solution, and appropriate SWG scope is yet to be determined\n\n![](https://lucid.app/publicSegments/view/9d075f82-8611-4f32-83eb-994143669cc8/image.png)\n\n\nNotes:\n\n1. Policies are in preparation for naming and governance of these sub-registers, and this is subject to change pending adoption of such policies.\n1. Building Block identification will be designed to support transition between governance domains without change using symbolic references.\n1. A formal definition of Building Blocks and the level of \"granularity\" they represent with respect to the OGC Modular Specification is TBD.\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
-  "modified": "2024-07-09T06:23:36.989087",
+  "modified": "2024-07-09T06:36:53.788914",
   "tooling": {
     "bblocks-postprocess": {
       "commitId": "\"59af8b65c87552d103c26900d115b39f46238b57",
@@ -114,11 +114,11 @@
       "date": "2024-07-08T08:08:11+00:00\""
     }
   },
-  "gitRepository": "https://github.com/opengeospatial/bblocks",
-  "gitHubRepository": "https://github.com/opengeospatial/bblocks/blob/master/",
-  "baseURL": "https://opengeospatial.github.io/bblocks/",
-  "viewerURL": "https://opengeospatial.github.io/bblocks/register/",
-  "validationReport": "https://opengeospatial.github.io/bblocks/tests/report.html",
+  "gitRepository": "https://github.com/rob-metalinkage/bblocks",
+  "gitHubRepository": "https://github.com/rob-metalinkage/bblocks/blob/master/",
+  "baseURL": "https://rob-metalinkage.github.io/bblocks/",
+  "viewerURL": "https://rob-metalinkage.github.io/bblocks/register/",
+  "validationReport": "https://rob-metalinkage.github.io/bblocks/tests/report.html",
   "imports": [],
   "@type": [
     "skos:ConceptScheme",
@@ -135,7 +135,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "1.0.1",
-      "dateOfLastChange": "2023-03-09",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.13.2: Feature Collections Response",
@@ -159,25 +159,25 @@
       "group": "Common",
       "shaclRules": {},
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/bounding_box/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks/registereditems/geo/common/data_types/bounding_box/schema.yaml",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/common/data_types/bounding_box/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/data_types/bounding_box/schema.yaml",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/data_types/bounding_box/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks/blob/master/tests/geo/common/data_types/bounding_box/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/common/data_types/bounding_box/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/common/data_types/bounding_box/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/common/data_types/bounding_box/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/common/data_types/bounding_box/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/common/data_types/bounding_box/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.common.data_types.bounding_box"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.common.data_types.bounding_box"
         }
       },
       "@type": [
@@ -195,7 +195,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-15",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "IETF RFC 7946 - The GeoJSON Format",
@@ -203,31 +203,31 @@
         }
       ],
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json"
       },
       "maturity": "mature",
       "scope": "geo",
       "group": "Common",
       "shaclRules": {},
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/context.jsonld",
-      "remoteCacheDir": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/remote_cache/",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/context.jsonld",
+      "remoteCacheDir": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/remote_cache/",
       "sourceSchema": "https://geojson.org/schema/Feature.json",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/common/data_types/geojson/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/common/data_types/geojson/",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/data_types/geojson/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/data_types/geojson/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/common/data_types/geojson/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/common/data_types/geojson/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/common/data_types/geojson/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/common/data_types/geojson/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.common.data_types.geojson"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.common.data_types.geojson"
         }
       },
       "@type": [
@@ -245,7 +245,7 @@
       "itemClass": "parameter",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2022-05-24",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.15.3: Parameter bbox",
@@ -253,29 +253,29 @@
         }
       ],
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox/schema.json"
       },
       "maturity": "mature",
       "scope": "geo",
       "group": "Common",
       "shaclRules": {},
-      "remoteCacheDir": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox/remote_cache/",
+      "remoteCacheDir": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox/remote_cache/",
       "sourceSchema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/bbox.yaml",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/common/parameters/bbox/",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/parameters/bbox/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/common/parameters/bbox/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/common/parameters/bbox/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/common/parameters/bbox/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/common/parameters/bbox/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.common.parameters.bbox"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.common.parameters.bbox"
         }
       },
       "@type": [
@@ -293,7 +293,7 @@
       "itemClass": "parameter",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2022-07-05",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 2, 6.3.1: Parameter bbox-crs",
@@ -305,24 +305,24 @@
       "group": "Common",
       "shaclRules": {},
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks/registereditems/geo/common/parameters/bbox-crs/schema.yaml",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/common/parameters/bbox-crs/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/parameters/bbox-crs/schema.yaml",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/parameters/bbox-crs/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/common/parameters/bbox-crs/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/common/parameters/bbox-crs/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/common/parameters/bbox-crs/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/common/parameters/bbox-crs/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.common.parameters.bbox-crs"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.common.parameters.bbox-crs"
         }
       },
       "@type": [
@@ -340,7 +340,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2022-05-18",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "IETF RFC 8288 - Web Linking",
@@ -350,27 +350,27 @@
       "maturity": "mature",
       "scope": "ogc-utils",
       "shaclRules": {},
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/context.jsonld",
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/json-link/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks/registereditems/ogc-utils/json-link/schema.yaml",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/ogc-utils/json-link/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/ogc-utils/json-link/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/json-link/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/json-link/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/json-link/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/ogc-utils/json-link/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/ogc-utils/json-link/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/ogc-utils/json-link/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/ogc-utils/json-link/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.ogc-utils.json-link"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.ogc-utils.json-link"
         }
       },
       "@type": [
@@ -388,7 +388,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-07-13",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
@@ -398,29 +398,29 @@
       "maturity": "proposal",
       "scope": "geo",
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/advanced/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/advanced/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/advanced/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/advanced/schema.json"
       },
       "group": "GeoPose",
       "shaclRules": {},
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/advanced/context.jsonld",
-      "remoteCacheDir": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/advanced/remote_cache/",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/advanced/context.jsonld",
+      "remoteCacheDir": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/advanced/remote_cache/",
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Advanced.Schema.json",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/geopose/advanced/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/geopose/advanced/",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/advanced/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/advanced/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/geopose/advanced/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/geopose/advanced/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/geopose/advanced/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/geopose/advanced/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.geopose.advanced"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.geopose.advanced"
         }
       },
       "@type": [
@@ -438,7 +438,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-07-13",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
@@ -448,29 +448,29 @@
       "maturity": "proposal",
       "scope": "geo",
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/schema.json"
       },
       "group": "GeoPose",
       "shaclRules": {},
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/context.jsonld",
-      "remoteCacheDir": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/remote_cache/",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/context.jsonld",
+      "remoteCacheDir": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/remote_cache/",
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.Quaternion.Schema.json",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/geopose/basic/quaternion/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/geopose/basic/quaternion/",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/basic/quaternion/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/basic/quaternion/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/geopose/basic/quaternion/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/geopose/basic/quaternion/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/geopose/basic/quaternion/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/geopose/basic/quaternion/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.geopose.basic.quaternion"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.geopose.basic.quaternion"
         }
       },
       "@type": [
@@ -488,7 +488,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-07-13",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
@@ -498,30 +498,30 @@
       "maturity": "proposal",
       "scope": "geo",
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/schema.json"
       },
       "group": "GeoPose",
       "shaclRules": {},
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld",
-      "remoteCacheDir": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/remote_cache/",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/context.jsonld",
+      "remoteCacheDir": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/ypr/remote_cache/",
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.YPR.Schema.json",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/geopose/basic/ypr/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/geopose/basic/ypr/",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/basic/ypr/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/basic/ypr/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks/blob/master/tests/geo/geopose/basic/ypr/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/geopose/basic/ypr/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/geopose/basic/ypr/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/geopose/basic/ypr/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/geopose/basic/ypr/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/geopose/basic/ypr/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.geopose.basic.ypr"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.geopose.basic.ypr"
         }
       },
       "@type": [
@@ -538,10 +538,10 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.2.2",
-      "dateOfLastChange": "2024-05-28",
+      "dateOfLastChange": "2024-07-09",
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json"
       },
       "sources": [
         {
@@ -552,25 +552,25 @@
       "scope": "geo",
       "group": "JSON-FG",
       "shaclRules": {},
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld",
-      "remoteCacheDir": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/time/remote_cache/",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/context.jsonld",
+      "remoteCacheDir": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/remote_cache/",
       "sourceSchema": "https://beta.schemas.opengis.net/json-fg/time.json",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/time/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/time/",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/time/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/time/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks/blob/master/tests/geo/json-fg/time/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/time/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/json-fg/time/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/time/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/json-fg/time/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/time/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.json-fg.time"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.time"
         }
       },
       "@type": [
@@ -588,7 +588,7 @@
       "itemClass": "datatype",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2023-03-09",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "IETF RFC 3986 - Uniform Resource Identifiers (URI): Generic Syntax",
@@ -607,25 +607,25 @@
       "group": "Common",
       "shaclRules": {},
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/iri-or-curie/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks/registereditems/ogc-utils/iri-or-curie/schema.yaml",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/ogc-utils/iri-or-curie/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/iri-or-curie/schema.yaml",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/iri-or-curie/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks/blob/master/tests/ogc-utils/iri-or-curie/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/ogc-utils/iri-or-curie/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/ogc-utils/iri-or-curie/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/ogc-utils/iri-or-curie/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/ogc-utils/iri-or-curie/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/ogc-utils/iri-or-curie/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.ogc-utils.iri-or-curie"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.ogc-utils.iri-or-curie"
         }
       },
       "@type": [
@@ -643,7 +643,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-15",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -659,32 +659,32 @@
       "group": "Common",
       "shaclRules": {},
       "dependsOn": [
-        "ogc.ogc-utils.json-link",
+        "ogc.geo.common.data_types.geojson",
         "ogc.geo.common.data_types.bounding_box",
-        "ogc.geo.common.data_types.geojson"
+        "ogc.ogc-utils.json-link"
       ],
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/context.jsonld",
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/schema.yaml",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/feature/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/feature/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/feature/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks/blob/master/tests/geo/features/feature/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/features/feature/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/features/feature/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/features/feature/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/features/feature/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/features/feature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.features.feature"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.features.feature"
         }
       },
       "@type": [
@@ -702,7 +702,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-08-21",
+      "dateOfLastChange": "2024-07-09",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -716,28 +716,28 @@
         "ogc.ogc-utils.iri-or-curie",
         "ogc.ogc-utils.json-link"
       ],
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/context.jsonld",
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/link-role/schema.yaml",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/link-role/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/link-role/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/link-role/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/link-role/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/link-role/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks/blob/master/tests/geo/json-fg/link-role/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/link-role/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/json-fg/link-role/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/link-role/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/json-fg/link-role/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/link-role/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.json-fg.link-role"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.link-role"
         }
       },
       "@type": [
@@ -755,7 +755,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-05-24",
+      "dateOfLastChange": "2024-07-09",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "maturity": "development",
@@ -769,28 +769,28 @@
       "dependsOn": [
         "ogc.ogc-utils.iri-or-curie"
       ],
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/context.jsonld",
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/ogc-utils/topology/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks/registereditems/ogc-utils/topology/schema.yaml",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/ogc-utils/topology/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/ogc-utils/topology/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/topology/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/topology/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/topology/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks/blob/master/tests/ogc-utils/topology/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/ogc-utils/topology/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/ogc-utils/topology/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/ogc-utils/topology/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/ogc-utils/topology/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/ogc-utils/topology/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.ogc-utils.topology"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.ogc-utils.topology"
         }
       },
       "@type": [
@@ -808,14 +808,14 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2023-06-26",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.14.2: Feature Collection Response",
           "link": "https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_5"
         }
       ],
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld",
       "maturity": "mature",
       "scope": "geo",
       "group": "Common",
@@ -825,26 +825,26 @@
         "ogc.geo.features.feature"
       ],
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/schema.yaml",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/features/featureCollection/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/featureCollection/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/feature/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/featureCollection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks/blob/master/tests/geo/features/featureCollection/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/features/featureCollection/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/features/featureCollection/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/features/featureCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/features/featureCollection/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/features/featureCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.features.featureCollection"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.features.featureCollection"
         }
       },
       "@type": [
@@ -862,7 +862,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-05-31",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC Testbed-17: OGC Features and Geometries JSON Engineering Report",
@@ -877,28 +877,28 @@
         "ogc.ogc-utils.json-link",
         "ogc.geo.features.feature"
       ],
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld",
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/feature/schema.json",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/feature/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/feature/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature/schema.json",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks/blob/master/tests/geo/json-fg/feature/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/feature/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/json-fg/feature/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/feature/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/json-fg/feature/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/feature/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.json-fg.feature"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.feature"
         }
       },
       "@type": [
@@ -916,14 +916,14 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-08-08",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC Testbed-17: OGC Features and Geometries JSON Engineering Report",
           "link": "http://docs.ogc.org/per/21-017r1.html"
         }
       ],
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/context.jsonld",
       "seeAlso": [
         "ogc.geo.json-fg.feature"
       ],
@@ -936,25 +936,25 @@
         "ogc.geo.features.feature"
       ],
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/feature-lenient/schema.yaml",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/feature/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/feature-lenient/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature-lenient/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature-lenient/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/json-fg/feature-lenient/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/feature-lenient/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/json-fg/feature-lenient/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/feature-lenient/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.json-fg.feature-lenient"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.feature-lenient"
         }
       },
       "@type": [
@@ -972,7 +972,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-05-31",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC Testbed-17: OGC Features and Geometries JSON Engineering Report",
@@ -983,32 +983,32 @@
       "group": "JSON-FG",
       "shaclRules": {},
       "dependsOn": [
-        "ogc.geo.features.featureCollection",
         "ogc.geo.json-fg.feature",
-        "ogc.ogc-utils.json-link"
+        "ogc.ogc-utils.json-link",
+        "ogc.geo.features.featureCollection"
       ],
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/context.jsonld",
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/featureCollection/schema.json",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/featureCollection/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/featureCollection/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/featureCollection/schema.json",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/featureCollection/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/featureCollection/",
       "validationPassed": true,
-      "testOutputs": "https://github.com/opengeospatial/bblocks/blob/master/tests/geo/json-fg/featureCollection/",
+      "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/featureCollection/",
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/json-fg/featureCollection/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/featureCollection/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/json-fg/featureCollection/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/featureCollection/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.json-fg.featureCollection"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.featureCollection"
         }
       },
       "@type": [
@@ -1026,14 +1026,14 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-08-08",
+      "dateOfLastChange": "2024-07-09",
       "sources": [
         {
           "title": "OGC Testbed-17: OGC Features and Geometries JSON Engineering Report",
           "link": "http://docs.ogc.org/per/21-017r1.html"
         }
       ],
-      "ldContext": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/context.jsonld",
+      "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/context.jsonld",
       "seeAlso": [
         "ogc.geo.json-fg.featureCollection"
       ],
@@ -1042,29 +1042,29 @@
       "shaclRules": {},
       "dependsOn": [
         "ogc.geo.features.featureCollection",
-        "ogc.geo.json-fg.feature-lenient",
-        "ogc.ogc-utils.json-link"
+        "ogc.ogc-utils.json-link",
+        "ogc.geo.json-fg.feature-lenient"
       ],
       "schema": {
-        "application/yaml": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml",
-        "application/json": "https://opengeospatial.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.json"
+        "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml",
+        "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.json"
       },
-      "sourceSchema": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/featureCollection-lenient/schema.yaml",
-      "sourceLdContext": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/featureCollection/context.jsonld",
-      "sourceFiles": "https://opengeospatial.github.io/bblocks/registereditems/geo/json-fg/featureCollection-lenient/",
+      "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/featureCollection-lenient/schema.yaml",
+      "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/featureCollection/context.jsonld",
+      "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/featureCollection-lenient/",
       "validationPassed": true,
       "documentation": {
         "markdown": {
           "mediatype": "text/markdown",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/markdown/geo/json-fg/featureCollection-lenient/index.md"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/featureCollection-lenient/index.md"
         },
         "json-full": {
           "mediatype": "application/json",
-          "url": "https://opengeospatial.github.io/bblocks/generateddocs/json-full/geo/json-fg/featureCollection-lenient/index.json"
+          "url": "https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/featureCollection-lenient/index.json"
         },
         "bblocks-viewer": {
           "mediatype": "text/html",
-          "url": "https://opengeospatial.github.io/bblocks/register/bblock/ogc.geo.json-fg.featureCollection-lenient"
+          "url": "https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.featureCollection-lenient"
         }
       },
       "@type": [

@@ -42,11 +42,11 @@ properties:
   position:
     x-jsonld-id: http://example.com/geopose/position
     allOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/schema-oas3.0.yaml#/definitions/Position
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/schema-oas3.0.yaml#/definitions/Position
   quaternion:
     x-jsonld-id: http://example.com/geopose/quaternion
     allOf:
-    - $ref: https://opengeospatial.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/schema-oas3.0.yaml#/definitions/Quaternion
+    - $ref: https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/schema-oas3.0.yaml#/definitions/Quaternion
 required:
 - position
 - quaternion

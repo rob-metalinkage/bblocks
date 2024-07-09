@@ -2,7 +2,7 @@ path	@id
 /type	@type
 /id	@id
 /properties	@nest
-/geometry	https://purl.org/geojson/vocab#geometry
+/geometry	http://www.opengis.net/ont/geosparql#hasGeometry
 /geometry/type	@type
 /geometry/coordinates	https://purl.org/geojson/vocab#coordinates
 /geometry/bbox	https://purl.org/geojson/vocab#bbox

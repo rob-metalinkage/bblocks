@@ -4,7 +4,7 @@ path	@id
 /features/type	@type
 /features/id	@id
 /features/properties	@nest
-/features/geometry	https://purl.org/geojson/vocab#geometry
+/features/geometry	http://www.opengis.net/ont/geosparql#hasGeometry
 /features/geometry/type	@type
 /features/geometry/coordinates	https://purl.org/geojson/vocab#coordinates
 /features/geometry/bbox	https://purl.org/geojson/vocab#bbox
