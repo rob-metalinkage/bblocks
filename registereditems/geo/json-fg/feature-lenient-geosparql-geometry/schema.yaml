@@ -1,0 +1,3 @@
+allOf:
+  - $ref: bblocks://ogc.geo.json-fg.feature-lenient
+  - $ref: bblocks://ogc.geo.features.geosparqlGeometry
