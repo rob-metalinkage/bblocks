@@ -1,0 +1,13 @@
+{
+  "name": "Mixin for feature with GeoSPARQL geometry",
+  "abstract": "This schema can be used as a mixin for feature objects to represent their geometry as a literal GeoSPARQL value instead of an RDF resource",
+  "status": "stable",
+  "dateTimeAddition": "2024-07-09T10:57:00+00:00",
+  "itemClass": "schema",
+  "register": "ogc-building-block-register",
+  "version": "1.0",
+  "dateOfLastChange": "2024-07-09",
+  "maturity": "mature",
+  "scope": "geo",
+  "group": "Common"
+}

@@ -1,0 +1,19 @@
+@prefix : <https://www.ogc.org/rules/template#> .
+@prefix rdf:         <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:        <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:          <http://www.w3.org/ns/shacl#> .
+@prefix xsd:         <http://www.w3.org/2001/XMLSchema#> .
+@prefix mynamespace: <http://example.org/ns1/> .
+@prefix geo: <http://www.opengis.net/ont/geosparql#> .
+@prefix geojson: <https://purl.org/geojson/vocab#> .
+
+:featureHasGeoSPARLGeometry
+  a sh:NodeShape ;
+  sh:targetClass geojson:Feature ;
+  sh:message "Feature must have GeoSPARQL geometry" ;
+  sh:property [
+    sh:path geo:hasGeometry ;
+    sh:minCount 1 ;
+    sh:datatype rdf:JSON ;
+  ]
+.
