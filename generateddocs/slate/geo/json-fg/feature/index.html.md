@@ -460,8 +460,8 @@ JSON Schema is used to formally specify the JSON-FG syntax.
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix geo: <http://www.opengis.net/ont/geosparql#> .
 @prefix geojson: <https://purl.org/geojson/vocab#> .
-@prefix ns1: <http://www.opengis.net/def/glossary/term/> .
-@prefix ns2: <http://www.iana.org/assignments/> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix ns2: <http://www.opengis.net/def/glossary/term/> .
 @prefix oa: <http://www.w3.org/ns/oa#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
@@ -471,13 +471,13 @@ JSON Schema is used to formally specify the JSON-FG syntax.
         geojson:Feature ;
     dcterms:spatial [ a <https://example.com/json-fg/Polyhedron> ] ;
     dcterms:time [ time:hasTime ( "2014-04-24T10:50:18Z" ".." ) ] ;
-    ns1:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/5555" ;
+    ns2:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/5555" ;
     geo:hasGeometry "{\"coordinates\":[[[8.7092045,51.5035285,100],[8.7093128,51.503457,100],[8.7093919,51.503503,100],[8.7092837,51.5035747,100],[8.7092045,51.5035285,100]]],\"type\":\"Polygon\"}"^^rdf:JSON ;
     rdfs:seeAlso [ rdfs:label "Cadastral parcel 313 in district Wünnenberg (016)" ;
-            ns2:relation <http://www.opengis.net/def/rel/ogc/1.0/within> ;
+            ns1:relation <http://www.opengis.net/def/rel/ogc/1.0/within> ;
             oa:hasTarget <https://example.org/data/v1/collections/cadastralparcel/items/05297001600313______> ],
         [ rdfs:label "This feature is of type 'building'" ;
-            ns2:relation <http://www.iana.org/assignments/relation/type> ;
+            ns1:relation <http://www.iana.org/assignments/relation/type> ;
             oa:hasTarget <https://inspire.ec.europa.eu/featureconcept/Building> ] .
 
 

@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.json-fg.feature-lenient-geosparql-geometry - JSON-FG Feature - Lenient - with GeoSPARQL Geometry",
   "bblockName": "JSON-FG Feature - Lenient - with GeoSPARQL Geometry",
   "bblockId": "ogc.geo.json-fg.feature-lenient-geosparql-geometry",
-  "generated": "2024-07-28T04:22:38.247785+00:00",
+  "generated": "2024-08-04T04:26:27.122678+00:00",
   "result": true,
   "items": [
     {
@@ -18,11 +18,6 @@
       },
       "result": true,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": []
-        },
         {
           "name": "FILES",
           "title": "Files",
@@ -65,16 +60,6 @@
           ]
         },
         {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
-        },
-        {
-          "name": "TURTLE",
-          "title": "Turtle",
-          "entries": []
-        },
-        {
           "name": "SHACL",
           "title": "SHACL",
           "entries": [
@@ -98,11 +83,6 @@
               "message": "Focus nodes for registereditems/geo/features/geosparqlGeometry/rules.shacl:\n - Shape :featureHasGeoSPARLGeometry: <https://example.com/json-fg/DENW19AL0000giv5BL>\n"
             }
           ]
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
         }
       ]
     },
@@ -119,11 +99,6 @@
       },
       "result": true,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": []
-        },
         {
           "name": "FILES",
           "title": "Files",
@@ -166,16 +141,6 @@
           ]
         },
         {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
-        },
-        {
-          "name": "TURTLE",
-          "title": "Turtle",
-          "entries": []
-        },
-        {
           "name": "SHACL",
           "title": "SHACL",
           "entries": [
@@ -199,11 +164,6 @@
               "message": "Focus nodes for registereditems/geo/features/geosparqlGeometry/rules.shacl:\n - Shape :featureHasGeoSPARLGeometry: <https://example.com/json-fg/fence.1>\n"
             }
           ]
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
         }
       ]
     }

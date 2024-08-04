@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.features.geosparqlGeometry - Mixin for feature with GeoSPARQL geometry",
   "bblockName": "Mixin for feature with GeoSPARQL geometry",
   "bblockId": "ogc.geo.features.geosparqlGeometry",
-  "generated": "2024-07-28T04:22:31.242687+00:00",
+  "generated": "2024-08-04T04:26:22.202464+00:00",
   "result": true,
   "items": [
     {
@@ -17,11 +17,6 @@
       },
       "result": true,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": []
-        },
         {
           "name": "FILES",
           "title": "Files",
@@ -64,16 +59,6 @@
           ]
         },
         {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
-        },
-        {
-          "name": "TURTLE",
-          "title": "Turtle",
-          "entries": []
-        },
-        {
           "name": "SHACL",
           "title": "SHACL",
           "entries": [
@@ -95,11 +80,6 @@
               "message": "Focus nodes for registereditems/geo/features/geosparqlGeometry/rules.shacl:\n - Shape :featureHasGeoSPARLGeometry: *none*\n"
             }
           ]
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
         }
       ]
     },
@@ -115,11 +95,6 @@
       },
       "result": true,
       "sections": [
-        {
-          "name": "GENERAL",
-          "title": "General",
-          "entries": []
-        },
         {
           "name": "FILES",
           "title": "Files",
@@ -162,16 +137,6 @@
           ]
         },
         {
-          "name": "JSON_LD",
-          "title": "JSON-LD",
-          "entries": []
-        },
-        {
-          "name": "TURTLE",
-          "title": "Turtle",
-          "entries": []
-        },
-        {
           "name": "SHACL",
           "title": "SHACL",
           "entries": [
@@ -193,11 +158,6 @@
               "message": "Focus nodes for registereditems/geo/features/geosparqlGeometry/rules.shacl:\n - Shape :featureHasGeoSPARLGeometry: *none*\n"
             }
           ]
-        },
-        {
-          "name": "UNKNOWN",
-          "title": "Unknown errors",
-          "entries": []
         }
       ]
     }
