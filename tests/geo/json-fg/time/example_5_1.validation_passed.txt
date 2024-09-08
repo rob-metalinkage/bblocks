@@ -1,5 +1,5 @@
 Validation report for ogc.geo.json-fg.time - JSON-FG time member
-Generated 2024-09-01T04:26:24.680451+00:00
+Generated 2024-09-08T04:25:02.592153+00:00
 === Files ===
 Using example_5_1.json from examples
 JSON-LD context is present - uplifting
