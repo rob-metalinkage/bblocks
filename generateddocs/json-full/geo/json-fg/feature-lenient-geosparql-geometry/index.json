@@ -28,8 +28,8 @@
     ]
   },
   "dependsOn": [
-    "ogc.geo.json-fg.feature-lenient",
-    "ogc.geo.features.geosparqlGeometry"
+    "ogc.geo.features.geosparqlGeometry",
+    "ogc.geo.json-fg.feature-lenient"
   ],
   "schema": {
     "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient-geosparql-geometry/schema.yaml",
