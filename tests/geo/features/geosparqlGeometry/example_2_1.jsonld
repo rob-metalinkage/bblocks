@@ -1,4 +1,5 @@
 {
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld",
   "type": "Hospital",
   "geometry": {
     "coordinates": [
@@ -30,6 +31,5 @@
       ]
     ],
     "type": "Polygon"
-  },
-  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld"
+  }
 }

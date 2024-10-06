@@ -150,6 +150,7 @@ JSON Schema is used to formally specify the JSON-FG syntax.
 #### jsonld
 ```jsonld
 {
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld",
   "type": "Feature",
   "id": "DENW19AL0000giv5BL",
   "conformsTo": [
@@ -406,8 +407,7 @@ JSON Schema is used to formally specify the JSON-FG syntax.
         "title": "Jane Doe"
       }
     ]
-  },
-  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld"
+  }
 }
 ```
 
@@ -481,6 +481,7 @@ JSON Schema is used to formally specify the JSON-FG syntax.
 #### jsonld
 ```jsonld
 {
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld",
   "type": "Feature",
   "id": "fence.1",
   "conformsTo": [
@@ -514,8 +515,7 @@ JSON Schema is used to formally specify the JSON-FG syntax.
     "lower": 2.02,
     "upper": 3.22
   },
-  "properties": null,
-  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld"
+  "properties": null
 }
 ```
 
@@ -578,6 +578,7 @@ for the `place` property.
 #### jsonld
 ```jsonld
 {
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld",
   "type": "Feature",
   "id": "my-space-station",
   "conformsTo": [
@@ -601,8 +602,7 @@ for the `place` property.
       44143.21
     ]
   },
-  "properties": {},
-  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld"
+  "properties": {}
 }
 ```
 

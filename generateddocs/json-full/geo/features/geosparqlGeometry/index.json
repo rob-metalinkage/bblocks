@@ -43,7 +43,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      174.7501603083,\n      -36.9307359096\n    ]\n  },\n  \"properties\": {\n    \"comment\": \"An attribute value\"\n  },\n  \"@context\": \"https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld\",\n  \"id\": \"f1\",\n  \"type\": \"Feature\",\n  \"geometry\": {\n    \"type\": \"Point\",\n    \"coordinates\": [\n      174.7501603083,\n      -36.9307359096\n    ]\n  },\n  \"properties\": {\n    \"comment\": \"An attribute value\"\n  }\n}",
           "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/features/geosparqlGeometry/example_1_1.jsonld"
         },
         {
@@ -64,7 +64,7 @@
         },
         {
           "language": "jsonld",
-          "code": "{\n  \"type\": \"Hospital\",\n  \"geometry\": {\n    \"coordinates\": [\n      [\n        [\n          -3.911628540272403,\n          43.651451755119155\n        ],\n        [\n          -4.151550411746342,\n          43.431113348164445\n        ],\n        [\n          -4.007817057797524,\n          43.198127563783316\n        ],\n        [\n          -3.5760153469796023,\n          43.29143725429333\n        ],\n        [\n          -3.455852048155407,\n          43.63987947818879\n        ],\n        [\n          -3.911628540272403,\n          43.651451755119155\n        ]\n      ]\n    ],\n    \"type\": \"Polygon\"\n  },\n  \"@context\": \"https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld\"\n}",
+          "code": "{\n  \"@context\": \"https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld\",\n  \"type\": \"Hospital\",\n  \"geometry\": {\n    \"coordinates\": [\n      [\n        [\n          -3.911628540272403,\n          43.651451755119155\n        ],\n        [\n          -4.151550411746342,\n          43.431113348164445\n        ],\n        [\n          -4.007817057797524,\n          43.198127563783316\n        ],\n        [\n          -3.5760153469796023,\n          43.29143725429333\n        ],\n        [\n          -3.455852048155407,\n          43.63987947818879\n        ],\n        [\n          -3.911628540272403,\n          43.651451755119155\n        ]\n      ]\n    ],\n    \"type\": \"Polygon\"\n  }\n}",
           "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/features/geosparqlGeometry/example_2_1.jsonld"
         },
         {

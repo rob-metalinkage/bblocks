@@ -32,6 +32,7 @@ This schema can be used as a mixin for feature objects to represent their geomet
 #### jsonld
 ```jsonld
 {
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld",
   "id": "f1",
   "type": "Feature",
   "geometry": {
@@ -43,8 +44,7 @@ This schema can be used as a mixin for feature objects to represent their geomet
   },
   "properties": {
     "comment": "An attribute value"
-  },
-  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld"
+  }
 }
 ```
 
@@ -102,6 +102,7 @@ This schema can be used as a mixin for feature objects to represent their geomet
 #### jsonld
 ```jsonld
 {
+  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld",
   "type": "Hospital",
   "geometry": {
     "coordinates": [
@@ -133,8 +134,7 @@ This schema can be used as a mixin for feature objects to represent their geomet
       ]
     ],
     "type": "Polygon"
-  },
-  "@context": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld"
+  }
 }
 ```
 

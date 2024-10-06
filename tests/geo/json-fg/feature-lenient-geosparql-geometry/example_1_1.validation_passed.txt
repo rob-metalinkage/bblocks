@@ -1,5 +1,5 @@
 Validation report for ogc.geo.json-fg.feature-lenient-geosparql-geometry - JSON-FG Feature - Lenient - with GeoSPARQL Geometry
-Generated 2024-09-29T04:26:14.000217+00:00
+Generated 2024-10-06T04:26:19.713405+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
