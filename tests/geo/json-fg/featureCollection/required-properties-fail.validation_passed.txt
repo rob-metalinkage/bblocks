@@ -1,5 +1,5 @@
 Validation report for ogc.geo.json-fg.featureCollection - JSON-FG Feature Collection
-Generated 2024-10-20T04:26:30.017240+00:00
+Generated 2024-10-27T04:27:00.461608+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
