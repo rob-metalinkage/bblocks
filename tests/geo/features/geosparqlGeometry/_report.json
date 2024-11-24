@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.features.geosparqlGeometry - Mixin for feature with GeoSPARQL geometry",
   "bblockName": "Mixin for feature with GeoSPARQL geometry",
   "bblockId": "ogc.geo.features.geosparqlGeometry",
-  "generated": "2024-11-17T04:26:44.412853+00:00",
+  "generated": "2024-11-24T04:26:56.168843+00:00",
   "result": true,
   "items": [
     {
@@ -13,7 +13,7 @@
         "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/features/geosparqlGeometry/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
-        "language": "json"
+        "language": "application/json"
       },
       "result": true,
       "sections": [
@@ -91,7 +91,7 @@
         "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/features/geosparqlGeometry/example_2_1.json",
         "exampleIndex": 2,
         "snippetIndex": 1,
-        "language": "json"
+        "language": "application/json"
       },
       "result": true,
       "sections": [

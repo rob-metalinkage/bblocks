@@ -2,7 +2,7 @@
   "title": "Validation report for ogc.geo.features.featureCollection - Feature Collection",
   "bblockName": "Feature Collection",
   "bblockId": "ogc.geo.features.featureCollection",
-  "generated": "2024-11-17T04:26:44.697541+00:00",
+  "generated": "2024-11-24T04:26:56.295395+00:00",
   "result": true,
   "items": [
     {
@@ -13,7 +13,7 @@
         "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/features/featureCollection/example_1_1.json",
         "exampleIndex": 1,
         "snippetIndex": 1,
-        "language": "json"
+        "language": "application/json"
       },
       "result": true,
       "sections": [
