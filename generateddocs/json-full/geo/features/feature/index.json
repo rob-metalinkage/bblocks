@@ -25,8 +25,8 @@
   "group": "Common",
   "shaclRules": {},
   "dependsOn": [
-    "ogc.ogc-utils.json-link",
     "ogc.geo.common.data_types.bounding_box",
+    "ogc.ogc-utils.json-link",
     "ogc.geo.common.data_types.geojson"
   ],
   "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/context.jsonld",
@@ -37,6 +37,9 @@
   "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/feature/schema.yaml",
   "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/feature/context.jsonld",
   "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/feature/",
+  "rdfData": [
+    "https://rob-metalinkage.github.io/bblocks/data.ttl"
+  ],
   "validationPassed": true,
   "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/features/feature/",
   "description": "A feature is an abstraction of real world phenomena [ISO 19101-1:2014].\n\nThe GeoJSON representation is the currently recommended representation that all APIs should support, where GeoJSON can\nbe used for the data.\n\nEach GeoJSON feature includes the following JSON members:\n\n* `type`: fixed value \"Feature\".\n* `geometry`: the primary geometry of the feature describing its location as a GeoJSON geometry object. `null`, if the\n  feature has no spatial geometry.\n* `properties`: an object with a member for each feature property.",

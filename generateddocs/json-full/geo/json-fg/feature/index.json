@@ -21,8 +21,8 @@
   "shaclRules": {},
   "dependsOn": [
     "ogc.geo.json-fg.time",
-    "ogc.ogc-utils.json-link",
-    "ogc.geo.features.feature"
+    "ogc.geo.features.feature",
+    "ogc.ogc-utils.json-link"
   ],
   "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld",
   "schema": {
@@ -32,6 +32,9 @@
   "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature/schema.json",
   "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature/context.jsonld",
   "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature/",
+  "rdfData": [
+    "https://rob-metalinkage.github.io/bblocks/data.ttl"
+  ],
   "validationPassed": true,
   "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/feature/",
   "description": "OGC Features and Geometries JSON (JSON-FG) extends GeoJSON to support a limited set of additional capabilities that are\nout-of-scope for GeoJSON, but that are essential or important for a variety of use cases involving feature data.\n\nInformation that can be represented as GeoJSON is encoded as GeoJSON. Additional information is mainly encoded in\nadditional top-level members of GeoJSON objects. The members use keys that do not conflict with GeoJSON including the\nobsolete version that pre-dates the IETF standard. GeoJSON clients will be able to parse and understand all aspects that\nare specified by GeoJSON, JSON-FG clients will also parse and understand the additional capabilities.\n\nThis Standard specifies the following minimal extensions to the GeoJSON Standard:\n\n* The ability to use Coordinate Reference Systems (CRSs) other than WGS 84;\n* The ability to use non-Euclidean metrics, in particular ellipsoidal metrics;\n* Support for solids and prisms as geometry types;\n* The ability to encode temporal characteristics of a feature; and\n* The ability to declare the type and the schema of a feature.\n\nInformation that can be represented as GeoJSON is encoded as GeoJSON. Additional information is mainly encoded in\nadditional members of the GeoJSON objects. The additional members use keys that do not conflict with GeoJSON. This is so\nexisting and future GeoJSON clients will continue to parse and understand GeoJSON content. JSON-FG enabled clients will\nalso be able to parse and understand the additional members.\n\nJSON Schema is used to formally specify the JSON-FG syntax.",
@@ -53,7 +56,7 @@
         },
         {
           "language": "ttl",
-          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.opengis.net/def/glossary/term/> .\n@prefix ns2: <http://www.iana.org/assignments/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n\n<https://example.com/json-fg/DENW19AL0000giv5BL> a <app:building>,\n        geojson:Feature ;\n    dcterms:spatial [ a <https://example.com/json-fg/Polyhedron> ] ;\n    dcterms:time [ time:hasTime ( \"2014-04-24T10:50:18Z\" \"..\" ) ] ;\n    ns1:CoordinateReferenceSystemCRS \"http://www.opengis.net/def/crs/EPSG/0/5555\" ;\n    geo:hasGeometry \"{\\\"coordinates\\\":[[[8.7092045,51.5035285,100],[8.7093128,51.503457,100],[8.7093919,51.503503,100],[8.7092837,51.5035747,100],[8.7092045,51.5035285,100]]],\\\"type\\\":\\\"Polygon\\\"}\"^^rdf:JSON ;\n    rdfs:seeAlso [ rdfs:label \"This feature is of type 'building'\" ;\n            ns2:relation <http://www.iana.org/assignments/relation/type> ;\n            oa:hasTarget <https://inspire.ec.europa.eu/featureconcept/Building> ],\n        [ rdfs:label \"Cadastral parcel 313 in district W\u00fcnnenberg (016)\" ;\n            ns2:relation <http://www.opengis.net/def/rel/ogc/1.0/within> ;\n            oa:hasTarget <https://example.org/data/v1/collections/cadastralparcel/items/05297001600313______> ] .\n\n",
+          "code": "@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix geo: <http://www.opengis.net/ont/geosparql#> .\n@prefix geojson: <https://purl.org/geojson/vocab#> .\n@prefix ns1: <http://www.iana.org/assignments/> .\n@prefix ns2: <http://www.opengis.net/def/glossary/term/> .\n@prefix oa: <http://www.w3.org/ns/oa#> .\n@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix time: <http://www.w3.org/2006/time#> .\n\n<https://example.com/json-fg/DENW19AL0000giv5BL> a <app:building>,\n        geojson:Feature ;\n    dcterms:spatial [ a <https://example.com/json-fg/Polyhedron> ] ;\n    dcterms:time [ time:hasTime ( \"2014-04-24T10:50:18Z\" \"..\" ) ] ;\n    ns2:CoordinateReferenceSystemCRS \"http://www.opengis.net/def/crs/EPSG/0/5555\" ;\n    geo:hasGeometry \"{\\\"coordinates\\\":[[[8.7092045,51.5035285,100],[8.7093128,51.503457,100],[8.7093919,51.503503,100],[8.7092837,51.5035747,100],[8.7092045,51.5035285,100]]],\\\"type\\\":\\\"Polygon\\\"}\"^^rdf:JSON ;\n    rdfs:seeAlso [ rdfs:label \"This feature is of type 'building'\" ;\n            ns1:relation <http://www.iana.org/assignments/relation/type> ;\n            oa:hasTarget <https://inspire.ec.europa.eu/featureconcept/Building> ],\n        [ rdfs:label \"Cadastral parcel 313 in district W\u00fcnnenberg (016)\" ;\n            ns1:relation <http://www.opengis.net/def/rel/ogc/1.0/within> ;\n            oa:hasTarget <https://example.org/data/v1/collections/cadastralparcel/items/05297001600313______> ] .\n\n",
           "url": "https://rob-metalinkage.github.io/bblocks/tests/geo/json-fg/feature/example_1_1.ttl"
         }
       ]
