@@ -1,5 +1,5 @@
 Validation report for ogc.ogc-utils.iri-or-curie - IRI or CURIE
-Generated 2025-01-12T04:26:09.388198+00:00
+Generated 2025-01-19T04:24:43.709726+00:00
 === Files ===
 Using test42.json from test resources
 === End Files ===
