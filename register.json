@@ -2,12 +2,12 @@
   "name": "OGC Main",
   "description": "\nThe OGC Building Blocks register provides an overview of a series of building blocks managed by the OGC community through a variety of processes:\n\n- formal standards publication processes the Standards Working Groups\n- agreements with other standards bodies (eg. ISO)\n- community hosted examples of re-use (profiles and extensions of OGC standards)\n- informal \"incubator\" processes where more than one project needs a solution, and appropriate SWG scope is yet to be determined\n\n![](https://lucid.app/publicSegments/view/9d075f82-8611-4f32-83eb-994143669cc8/image.png)\n\n\nNotes:\n\n1. Policies are in preparation for naming and governance of these sub-registers, and this is subject to change pending adoption of such policies.\n1. Building Block identification will be designed to support transition between governance domains without change using symbolic references.\n1. A formal definition of Building Blocks and the level of \"granularity\" they represent with respect to the OGC Modular Specification is TBD.\n",
   "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
-  "modified": "2025-02-09T04:24:58.620465",
+  "modified": "2025-02-16T04:24:56.122619",
   "tooling": {
     "bblocks-postprocess": {
-      "commitId": "\"b71d082f86b0dedf5f2132beaae093bfe39b9712",
-      "shortCommitId": "\"b71d08",
-      "date": "2025-02-06T13:54:48+00:00\""
+      "commitId": "\"4628215f9c0319ef7d8ac960fb2adce65165b859",
+      "shortCommitId": "\"462821",
+      "date": "2025-02-12T08:32:19+00:00\""
     }
   },
   "gitRepository": "https://github.com/rob-metalinkage/bblocks",
@@ -25,7 +25,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "1.0.1",
-      "dateOfLastChange": "2023-03-09",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.13.2: Feature Collections Response",
@@ -54,9 +54,7 @@
       },
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/data_types/bounding_box/schema.yaml",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/data_types/bounding_box/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/common/data_types/bounding_box/",
       "documentation": {
@@ -83,7 +81,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-15",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "IETF RFC 7946 - The GeoJSON Format",
@@ -103,9 +101,7 @@
       "sourceSchema": "https://geojson.org/schema/Feature.json",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/data_types/geojson/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/data_types/geojson/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "markdown": {
@@ -131,7 +127,7 @@
       "itemClass": "parameter",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2022-05-24",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.15.3: Parameter bbox",
@@ -149,9 +145,7 @@
       "remoteCacheDir": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox/remote_cache/",
       "sourceSchema": "https://schemas.opengis.net/ogcapi/features/part1/1.0/openapi/parameters/bbox.yaml",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/parameters/bbox/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "markdown": {
@@ -177,7 +171,7 @@
       "itemClass": "parameter",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2022-07-05",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 2, 6.3.1: Parameter bbox-crs",
@@ -194,9 +188,7 @@
       },
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/parameters/bbox-crs/schema.yaml",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/parameters/bbox-crs/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "markdown": {
@@ -222,7 +214,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2022-05-18",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "IETF RFC 8288 - Web Linking",
@@ -240,9 +232,7 @@
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/json-link/schema.yaml",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/json-link/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/json-link/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "markdown": {
@@ -268,7 +258,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-07-13",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
@@ -288,9 +278,7 @@
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Advanced.Schema.json",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/advanced/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/advanced/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "markdown": {
@@ -316,7 +304,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-07-13",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
@@ -336,9 +324,7 @@
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.Quaternion.Schema.json",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/basic/quaternion/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/basic/quaternion/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "markdown": {
@@ -364,7 +350,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-07-13",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC GeoPose 1.0 Data Exchange Draft Standard",
@@ -384,9 +370,7 @@
       "sourceSchema": "https://schemas.opengis.net/geopose/1.0/schemata/GeoPose.Basic.YPR.Schema.json",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/basic/ypr/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/basic/ypr/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/geopose/basic/ypr/",
       "documentation": {
@@ -412,7 +396,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.2.2",
-      "dateOfLastChange": "2024-05-28",
+      "dateOfLastChange": "2025-02-09",
       "schema": {
         "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.yaml",
         "application/json": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/time/schema.json"
@@ -431,9 +415,7 @@
       "sourceSchema": "https://beta.schemas.opengis.net/json-fg/time.json",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/time/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/time/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/time/",
       "documentation": {
@@ -460,7 +442,7 @@
       "itemClass": "datatype",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2023-03-09",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "IETF RFC 3986 - Uniform Resource Identifiers (URI): Generic Syntax",
@@ -484,9 +466,7 @@
       },
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/iri-or-curie/schema.yaml",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/iri-or-curie/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/ogc-utils/iri-or-curie/",
       "documentation": {
@@ -513,7 +493,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2024-07-09",
+      "dateOfLastChange": "2025-02-09",
       "maturity": "mature",
       "scope": "geo",
       "group": "Common",
@@ -533,9 +513,7 @@
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/geosparqlGeometry/schema.yaml",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/geosparqlGeometry/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/geosparqlGeometry/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/features/geosparqlGeometry/",
       "documentation": {
@@ -562,7 +540,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2023-05-15",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.16.2: Feature Response",
@@ -590,9 +568,7 @@
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/feature/schema.yaml",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/feature/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/feature/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/features/feature/",
       "documentation": {
@@ -619,7 +595,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-08-21",
+      "dateOfLastChange": "2025-02-09",
       "sources": [],
       "maturity": "development",
       "scope": "unstable",
@@ -630,8 +606,8 @@
       ],
       "shaclRules": {},
       "dependsOn": [
-        "ogc.ogc-utils.json-link",
-        "ogc.ogc-utils.iri-or-curie"
+        "ogc.ogc-utils.iri-or-curie",
+        "ogc.ogc-utils.json-link"
       ],
       "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/context.jsonld",
       "schema": {
@@ -641,9 +617,7 @@
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/link-role/schema.yaml",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/link-role/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/link-role/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/link-role/",
       "documentation": {
@@ -670,7 +644,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-05-24",
+      "dateOfLastChange": "2025-02-09",
       "link": "https://github.com/icsm-au/3d-csdm-schema",
       "sources": [],
       "maturity": "development",
@@ -692,9 +666,7 @@
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/topology/schema.yaml",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/topology/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/ogc-utils/topology/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/ogc-utils/topology/",
       "documentation": {
@@ -721,7 +693,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "1.0",
-      "dateOfLastChange": "2023-06-26",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC API - Features, Part 1, 7.14.2: Feature Collection Response",
@@ -734,8 +706,8 @@
       "group": "Common",
       "shaclRules": {},
       "dependsOn": [
-        "ogc.ogc-utils.json-link",
-        "ogc.geo.features.feature"
+        "ogc.geo.features.feature",
+        "ogc.ogc-utils.json-link"
       ],
       "schema": {
         "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml",
@@ -744,9 +716,7 @@
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/featureCollection/schema.yaml",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/feature/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/featureCollection/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/features/featureCollection/",
       "documentation": {
@@ -773,7 +743,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-05-31",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC Testbed-17: OGC Features and Geometries JSON Engineering Report",
@@ -785,8 +755,8 @@
       "shaclRules": {},
       "dependsOn": [
         "ogc.geo.json-fg.time",
-        "ogc.ogc-utils.json-link",
-        "ogc.geo.features.feature"
+        "ogc.geo.features.feature",
+        "ogc.ogc-utils.json-link"
       ],
       "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld",
       "schema": {
@@ -796,9 +766,7 @@
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature/schema.json",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/feature/",
       "documentation": {
@@ -825,7 +793,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-08-08",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC Testbed-17: OGC Features and Geometries JSON Engineering Report",
@@ -841,8 +809,8 @@
       "shaclRules": {},
       "dependsOn": [
         "ogc.geo.json-fg.time",
-        "ogc.ogc-utils.json-link",
-        "ogc.geo.features.feature"
+        "ogc.geo.features.feature",
+        "ogc.ogc-utils.json-link"
       ],
       "schema": {
         "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml",
@@ -851,9 +819,7 @@
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature-lenient/schema.yaml",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature-lenient/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "markdown": {
@@ -879,7 +845,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-05-31",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC Testbed-17: OGC Features and Geometries JSON Engineering Report",
@@ -891,8 +857,8 @@
       "shaclRules": {},
       "dependsOn": [
         "ogc.geo.json-fg.feature",
-        "ogc.ogc-utils.json-link",
-        "ogc.geo.features.featureCollection"
+        "ogc.geo.features.featureCollection",
+        "ogc.ogc-utils.json-link"
       ],
       "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection/context.jsonld",
       "schema": {
@@ -902,9 +868,7 @@
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/featureCollection/schema.json",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/featureCollection/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/featureCollection/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/featureCollection/",
       "documentation": {
@@ -931,7 +895,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2024-07-09",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC Testbed-17: OGC Features and Geometries JSON Engineering Report",
@@ -960,9 +924,7 @@
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature-lenient-geosparql-geometry/schema.yaml",
       "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient-geosparql-geometry/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/feature-lenient-geosparql-geometry/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/feature-lenient-geosparql-geometry/",
       "documentation": {
@@ -989,7 +951,7 @@
       "itemClass": "schema",
       "register": "ogc-building-block-register",
       "version": "0.1",
-      "dateOfLastChange": "2023-08-08",
+      "dateOfLastChange": "2025-02-09",
       "sources": [
         {
           "title": "OGC Testbed-17: OGC Features and Geometries JSON Engineering Report",
@@ -1004,9 +966,9 @@
       "group": "JSON-FG",
       "shaclRules": {},
       "dependsOn": [
-        "ogc.ogc-utils.json-link",
+        "ogc.geo.json-fg.feature-lenient",
         "ogc.geo.features.featureCollection",
-        "ogc.geo.json-fg.feature-lenient"
+        "ogc.ogc-utils.json-link"
       ],
       "schema": {
         "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml",
@@ -1015,9 +977,7 @@
       "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/featureCollection-lenient/schema.yaml",
       "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/featureCollection/context.jsonld",
       "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/featureCollection-lenient/",
-      "rdfData": [
-        "https://rob-metalinkage.github.io/bblocks/data.ttl"
-      ],
+      "rdfData": [],
       "validationPassed": true,
       "documentation": {
         "markdown": {

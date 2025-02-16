@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2023-08-21",
+  "dateOfLastChange": "2025-02-09",
   "sources": [],
   "maturity": "development",
   "scope": "unstable",
@@ -20,8 +20,8 @@
   ],
   "shaclRules": {},
   "dependsOn": [
-    "ogc.ogc-utils.json-link",
-    "ogc.ogc-utils.iri-or-curie"
+    "ogc.ogc-utils.iri-or-curie",
+    "ogc.ogc-utils.json-link"
   ],
   "ldContext": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/context.jsonld",
   "schema": {
@@ -31,9 +31,7 @@
   "sourceSchema": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/link-role/schema.yaml",
   "sourceLdContext": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/link-role/context.jsonld",
   "sourceFiles": "https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/link-role/",
-  "rdfData": [
-    "https://rob-metalinkage.github.io/bblocks/data.ttl"
-  ],
+  "rdfData": [],
   "validationPassed": true,
   "testOutputs": "https://github.com/rob-metalinkage/bblocks/blob/master/tests/geo/json-fg/link-role/",
   "examples": [
