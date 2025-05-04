@@ -24,9 +24,9 @@ This Building Block extends the standard JSON-FG one by removing the requirement
    "type": "Feature",
    "id": "DENW19AL0000giv5BL",
    "conformsTo": [
-      "[ogc-json-fg-1-0.2:core]"         ,
-      "[ogc-json-fg-1-0.2:types-schemas]",
-      "[ogc-json-fg-1-0.2:3d]"
+      "http://www.opengis.net/spec/json-fg-1/0.3/conf/core"         ,
+      "http://www.opengis.net/spec/json-fg-1/0.3/conf/types-schemas",
+      "http://www.opengis.net/spec/json-fg-1/0.3/conf/polyhedra"
    ],
    "featureType": "app:building",
    "featureSchema": "https://example.org/data/v1/collections/buildings/schema",
@@ -138,9 +138,9 @@ This Building Block extends the standard JSON-FG one by removing the requirement
   "type": "Feature",
   "id": "DENW19AL0000giv5BL",
   "conformsTo": [
-    "[ogc-json-fg-1-0.2:core]",
-    "[ogc-json-fg-1-0.2:types-schemas]",
-    "[ogc-json-fg-1-0.2:3d]"
+    "http://www.opengis.net/spec/json-fg-1/0.3/conf/core",
+    "http://www.opengis.net/spec/json-fg-1/0.3/conf/types-schemas",
+    "http://www.opengis.net/spec/json-fg-1/0.3/conf/polyhedra"
   ],
   "featureType": "app:building",
   "featureSchema": "https://example.org/data/v1/collections/buildings/schema",
@@ -430,7 +430,7 @@ This Building Block extends the standard JSON-FG one by removing the requirement
 {
     "type": "Feature",
     "id": "fence.1",
-    "conformsTo" : [ "[ogc-json-fg-1-0.2:core]", "[ogc-json-fg-1-0.2:3d]" ],
+    "conformsTo" : [ "http://www.opengis.net/spec/json-fg-1/0.3/conf/core", "http://www.opengis.net/spec/json-fg-1/0.3/conf/prisms" ],
     "featureType": "fence",
     "time": {
         "interval": [
@@ -469,8 +469,8 @@ This Building Block extends the standard JSON-FG one by removing the requirement
   "type": "Feature",
   "id": "fence.1",
   "conformsTo": [
-    "[ogc-json-fg-1-0.2:core]",
-    "[ogc-json-fg-1-0.2:3d]"
+    "http://www.opengis.net/spec/json-fg-1/0.3/conf/core",
+    "http://www.opengis.net/spec/json-fg-1/0.3/conf/prisms"
   ],
   "featureType": "fence",
   "time": {
