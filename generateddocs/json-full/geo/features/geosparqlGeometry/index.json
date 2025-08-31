@@ -9,11 +9,11 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "1.0",
-  "dateOfLastChange": "2025-08-17",
+  "dateOfLastChange": "2025-08-24",
   "maturity": "mature",
   "scope": "geo",
   "group": "Common",
-  "shaclRules": {
+  "shaclShapes": {
     "ogc.geo.features.geosparqlGeometry": [
       "https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/geosparqlGeometry/rules.shacl"
     ]

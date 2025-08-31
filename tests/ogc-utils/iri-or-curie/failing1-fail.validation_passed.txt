@@ -1,5 +1,5 @@
 Validation report for ogc.ogc-utils.iri-or-curie - IRI or CURIE
-Generated 2025-08-24T04:31:47.438778+00:00
+Generated 2025-08-31T04:27:58.680451+00:00
 === General ===
 Test was expected to fail and it did.
 === End General ===
