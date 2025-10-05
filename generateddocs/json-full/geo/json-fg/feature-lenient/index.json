@@ -9,7 +9,7 @@
   "itemClass": "schema",
   "register": "ogc-building-block-register",
   "version": "0.1",
-  "dateOfLastChange": "2025-09-21",
+  "dateOfLastChange": "2025-09-28",
   "sources": [
     {
       "title": "OGC Testbed-17: OGC Features and Geometries JSON Engineering Report",
@@ -25,8 +25,8 @@
   "shaclShapes": {},
   "dependsOn": [
     "ogc.ogc-utils.json-link",
-    "ogc.geo.json-fg.time",
-    "ogc.geo.features.feature"
+    "ogc.geo.features.feature",
+    "ogc.geo.json-fg.time"
   ],
   "schema": {
     "application/yaml": "https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient/schema.yaml",

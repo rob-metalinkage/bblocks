@@ -429,12 +429,12 @@ JSON Schema is used to formally specify the JSON-FG syntax.
     dcterms:time [ time:hasTime ( "2014-04-24T10:50:18Z" ".." ) ] ;
     ns2:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/5555" ;
     geo:hasGeometry "{\"coordinates\":[[[8.7092045,51.5035285,100],[8.7093128,51.503457,100],[8.7093919,51.503503,100],[8.7092837,51.5035747,100],[8.7092045,51.5035285,100]]],\"type\":\"Polygon\"}"^^rdf:JSON ;
-    rdfs:seeAlso [ rdfs:label "This feature is of type 'building'" ;
-            ns1:relation <http://www.iana.org/assignments/relation/type> ;
-            oa:hasTarget <https://inspire.ec.europa.eu/featureconcept/Building> ],
-        [ rdfs:label "Cadastral parcel 313 in district Wünnenberg (016)" ;
+    rdfs:seeAlso [ rdfs:label "Cadastral parcel 313 in district Wünnenberg (016)" ;
             ns1:relation <http://www.opengis.net/def/rel/ogc/1.0/within> ;
-            oa:hasTarget <https://example.org/data/v1/collections/cadastralparcel/items/05297001600313______> ] .
+            oa:hasTarget <https://example.org/data/v1/collections/cadastralparcel/items/05297001600313______> ],
+        [ rdfs:label "This feature is of type 'building'" ;
+            ns1:relation <http://www.iana.org/assignments/relation/type> ;
+            oa:hasTarget <https://inspire.ec.europa.eu/featureconcept/Building> ] .
 
 
 ```
@@ -710,6 +710,19 @@ Links to the schema:
 ```jsonld
 {
   "@context": {
+    "Feature": "geojson:Feature",
+    "FeatureCollection": "geojson:FeatureCollection",
+    "GeometryCollection": "geojson:GeometryCollection",
+    "LineString": "geojson:LineString",
+    "MultiLineString": "geojson:MultiLineString",
+    "MultiPoint": "geojson:MultiPoint",
+    "MultiPolygon": "geojson:MultiPolygon",
+    "Point": "geojson:Point",
+    "Polygon": "geojson:Polygon",
+    "features": {
+      "@container": "@set",
+      "@id": "geojson:features"
+    },
     "type": "@type",
     "id": "@id",
     "properties": "@nest",
@@ -726,19 +739,6 @@ Links to the schema:
     "bbox": {
       "@container": "@list",
       "@id": "geojson:bbox"
-    },
-    "Feature": "geojson:Feature",
-    "FeatureCollection": "geojson:FeatureCollection",
-    "GeometryCollection": "geojson:GeometryCollection",
-    "LineString": "geojson:LineString",
-    "MultiLineString": "geojson:MultiLineString",
-    "MultiPoint": "geojson:MultiPoint",
-    "MultiPolygon": "geojson:MultiPolygon",
-    "Point": "geojson:Point",
-    "Polygon": "geojson:Polygon",
-    "features": {
-      "@container": "@set",
-      "@id": "geojson:features"
     },
     "links": {
       "@context": {
