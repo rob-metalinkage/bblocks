@@ -1,5 +1,5 @@
 Validation report for ogc.ogc-utils.topology - Geometry using references
-Generated 2025-10-05T04:27:01.085746+00:00
+Generated 2025-10-12T04:27:52.605684+00:00
 === Files ===
 Using example_1_1.json from examples
 JSON-LD context is present - uplifting
