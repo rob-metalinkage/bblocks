@@ -6,13 +6,13 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 
-<http://www.example.com/features/MyFeatureCollection> a geojson:FeatureCollection ;
-    skos:prefLabel "MyFeatureCollection" ;
-    geojson:features <http://www.example.com/features/f1> .
-
 <http://www.example.com/features/f1> a my:FeatureType,
         geojson:Feature ;
     dcterms:spatial [ a geojson:Point ] ;
     ns1:CoordinateReferenceSystemCRS "EPSG" ;
     geo:hasGeometry "null"^^rdf:JSON .
+
+[] a geojson:FeatureCollection ;
+    skos:prefLabel "MyFeatureCollection" ;
+    geojson:features <http://www.example.com/features/f1> .
 

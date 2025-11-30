@@ -71,11 +71,13 @@ Links to the schema:
   "@context": {
     "type": "@type",
     "featureType": "geojson:collectionFeatureType",
+    "geometryDimension": {},
+    "coordRefSys": {},
     "links": {
       "@context": {
         "href": {
-          "@type": "@id",
-          "@id": "oa:hasTarget"
+          "@id": "oa:hasTarget",
+          "@type": "@id"
         },
         "rel": {
           "@context": {
@@ -84,6 +86,7 @@ Links to the schema:
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
+        "anchor": {},
         "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
@@ -93,15 +96,27 @@ Links to the schema:
     },
     "features": {
       "@context": {
+        "id": "@id",
         "geometry": {
           "@context": {
             "coordinates": {
               "@container": "@list",
               "@id": "geojson:coordinates"
+            },
+            "measures": {
+              "@context": {
+                "enabled": {},
+                "unit": {},
+                "description": {}
+              }
             }
           },
-          "@id": "geo:hasGeometry",
+          "@id": "geojson:geometry",
           "@type": "@json"
+        },
+        "bbox": {
+          "@container": "@list",
+          "@id": "geojson:bbox"
         },
         "featureType": "@type",
         "time": {
@@ -121,12 +136,39 @@ Links to the schema:
           },
           "@id": "dct:time"
         },
-        "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
-        "place": "dct:spatial"
+        "coordRefSys": {
+          "@context": {
+            "href": {},
+            "epoch": {}
+          },
+          "@id": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS"
+        },
+        "place": {
+          "@context": {
+            "measures": {
+              "@context": {
+                "enabled": {},
+                "unit": {},
+                "description": {}
+              }
+            },
+            "coordinates": {},
+            "base": {},
+            "lower": {},
+            "upper": {},
+            "prisms": {}
+          },
+          "@id": "dct:spatial"
+        }
       },
       "@container": "@set",
       "@id": "geojson:features"
     },
+    "bbox": {},
+    "timeStamp": {},
+    "numberMatched": {},
+    "numberReturned": {},
+    "properties": "@nest",
     "Feature": "geojson:Feature",
     "FeatureCollection": "geojson:FeatureCollection",
     "GeometryCollection": "geojson:GeometryCollection",
@@ -136,21 +178,6 @@ Links to the schema:
     "MultiPolygon": "geojson:MultiPolygon",
     "Point": "geojson:Point",
     "Polygon": "geojson:Polygon",
-    "id": "@id",
-    "properties": "@nest",
-    "geometry": {
-      "@context": {
-        "coordinates": {
-          "@container": "@list",
-          "@id": "geojson:coordinates"
-        }
-      },
-      "@id": "geojson:geometry"
-    },
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
     "geometries": {
       "@id": "geojson:geometry",
       "@container": "@list"
