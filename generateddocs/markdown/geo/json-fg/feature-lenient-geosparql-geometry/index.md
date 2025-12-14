@@ -413,12 +413,12 @@ This Building Block extends the standard JSON-FG one by removing the requirement
     dcterms:time [ time:hasTime ( "2014-04-24T10:50:18Z" ".." ) ] ;
     ns2:CoordinateReferenceSystemCRS "http://www.opengis.net/def/crs/EPSG/0/5555" ;
     geo:hasGeometry "{\"coordinates\":[[[8.7092045,51.5035285,100],[8.7093128,51.503457,100],[8.7093919,51.503503,100],[8.7092837,51.5035747,100],[8.7092045,51.5035285,100]]],\"type\":\"Polygon\"}"^^rdf:JSON ;
-    rdfs:seeAlso [ rdfs:label "Cadastral parcel 313 in district Wünnenberg (016)" ;
-            ns1:relation <http://www.opengis.net/def/rel/ogc/1.0/within> ;
-            oa:hasTarget <https://example.org/data/v1/collections/cadastralparcel/items/05297001600313______> ],
-        [ rdfs:label "This feature is of type 'building'" ;
+    rdfs:seeAlso [ rdfs:label "This feature is of type 'building'" ;
             ns1:relation <http://www.iana.org/assignments/relation/type> ;
-            oa:hasTarget <https://inspire.ec.europa.eu/featureconcept/Building> ] .
+            oa:hasTarget <https://inspire.ec.europa.eu/featureconcept/Building> ],
+        [ rdfs:label "Cadastral parcel 313 in district Wünnenberg (016)" ;
+            ns1:relation <http://www.opengis.net/def/rel/ogc/1.0/within> ;
+            oa:hasTarget <https://example.org/data/v1/collections/cadastralparcel/items/05297001600313______> ] .
 
 
 ```
