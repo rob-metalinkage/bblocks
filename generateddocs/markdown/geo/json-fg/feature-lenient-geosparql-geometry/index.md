@@ -563,13 +563,6 @@ Links to the schema:
         "coordinates": {
           "@container": "@list",
           "@id": "geojson:coordinates"
-        },
-        "measures": {
-          "@context": {
-            "enabled": {},
-            "unit": {},
-            "description": {}
-          }
         }
       },
       "@id": "geo:hasGeometry",
@@ -592,7 +585,6 @@ Links to the schema:
           "@id": "http://www.iana.org/assignments/relation",
           "@type": "@id"
         },
-        "anchor": {},
         "type": "dct:type",
         "hreflang": "dct:language",
         "title": "rdfs:label",
@@ -618,30 +610,8 @@ Links to the schema:
       },
       "@id": "dct:time"
     },
-    "coordRefSys": {
-      "@context": {
-        "href": {},
-        "epoch": {}
-      },
-      "@id": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS"
-    },
-    "place": {
-      "@context": {
-        "measures": {
-          "@context": {
-            "enabled": {},
-            "unit": {},
-            "description": {}
-          }
-        },
-        "coordinates": {},
-        "base": {},
-        "lower": {},
-        "upper": {},
-        "prisms": {}
-      },
-      "@id": "dct:spatial"
-    },
+    "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
+    "place": "dct:spatial",
     "geometries": {
       "@id": "geojson:geometry",
       "@container": "@list"

@@ -183,8 +183,7 @@ Links to the schema:
         "bbox": {
           "@container": "@list",
           "@id": "geojson:bbox"
-        },
-        "geometries": {}
+        }
       },
       "@id": "geo:hasGeometry",
       "@type": "@json"
