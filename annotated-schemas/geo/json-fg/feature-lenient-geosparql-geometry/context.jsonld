@@ -21,15 +21,16 @@
         "coordinates": {
           "@container": "@list",
           "@id": "geojson:coordinates"
+        },
+        "bbox": {
+          "@container": "@list",
+          "@id": "geojson:bbox"
         }
       },
       "@id": "geo:hasGeometry",
       "@type": "@json"
     },
-    "bbox": {
-      "@container": "@list",
-      "@id": "geojson:bbox"
-    },
+    "bbox": "geojson:bbox",
     "links": {
       "@context": {
         "href": {
