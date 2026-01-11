@@ -1,5 +1,5 @@
 Validation report for ogc.geo.features.geosparqlGeometry - Mixin for feature with GeoSPARQL geometry
-Generated 2026-01-04T04:53:06.241103+00:00
+Generated 2026-01-11T04:52:25.189269+00:00
 === Files ===
 Using example_2_1.json from examples
 JSON-LD context is present - uplifting

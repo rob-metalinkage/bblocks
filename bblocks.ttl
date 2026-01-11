@@ -15,18 +15,18 @@
 
 <https://rob-metalinkage.github.io/bblocks/bblocks.ttl> a prov:Entity ;
     dct:format "text/turtle" ;
-    prov:wasAttributedTo _:Nfb2bdd5be0d446e2beffb582cfd09754 ;
+    prov:wasAttributedTo _:N2c98d9e8024948608c9bab92e635c719 ;
     prov:wasGeneratedBy [ a prov:Activity ;
-            prov:endedAtTime "2026-01-04T04:53:14.655340"^^xsd:dateTime ;
-            prov:startedAtTime "2026-01-04T04:53:14.560293"^^xsd:dateTime ;
+            prov:endedAtTime "2026-01-11T04:52:33.254823"^^xsd:dateTime ;
+            prov:startedAtTime "2026-01-11T04:52:33.146179"^^xsd:dateTime ;
             prov:used [ a prov:Entity ;
                     dct:format "application/yaml" ;
                     rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
                 [ a prov:Entity ;
                     dct:format "application/json" ;
-                    dct:hasVersion "git:b464f2640ad52b9c2feccb3d96f6c8af883b850c" ;
+                    dct:hasVersion "git:d36494c0dc7b9a6d2d34cd572e27e70fdd3bbe57" ;
                     rdfs:seeAlso <https://rob-metalinkage.github.io/bblocks/register.json> ] ;
-            prov:wasAssociatedWith _:Nfb2bdd5be0d446e2beffb582cfd09754 ] .
+            prov:wasAssociatedWith _:N2c98d9e8024948608c9bab92e635c719 ] .
 
 <bblocks://ogc.geo.common.parameters.bbox> a skos:Concept,
         dcat:Dataset,
@@ -34,25 +34,25 @@
     rdfs:label "bbox" ;
     dct:abstract "The bbox query parameter provides a simple mechanism for filtering resources based on their location. It selects all resources that intersect a rectangle (map view) or box (including height information)."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2022-05-24T13:51:38+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/common/parameters/bbox/index.json> ],
+        [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.common.parameters.bbox> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/common/parameters/bbox/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/common/parameters/bbox/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/common/parameters/bbox/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_parameter_bbox> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "bbox" ;
     skos:topConceptOf <https://rob-metalinkage.github.io/bblocks/> ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/geo> ;
     bblocks:status <http://www.opengis.net/def/status/stable> ;
@@ -64,25 +64,25 @@
     rdfs:label "bbox-crs" ;
     dct:abstract "The bbox-crs query parameter can be used to assert the coordinate reference system that is used for the coordinate values of the bbox parameter."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2022-07-05T01:01:01+02:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.common.parameters.bbox-crs> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/common/parameters/bbox-crs/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/common/parameters/bbox-crs/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/common/parameters/bbox-crs/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.common.parameters.bbox-crs> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <http://www.opengis.net/doc/IS/ogcapi-features-2/1.0#_parameter_bbox_crs> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "bbox-crs" ;
     skos:topConceptOf <https://rob-metalinkage.github.io/bblocks/> ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/parameters/bbox-crs/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/geo> ;
     bblocks:status <http://www.opengis.net/def/status/stable> ;
@@ -96,27 +96,27 @@
     dct:created "2023-07-13T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/geopose/advanced/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/geopose/advanced/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.geopose.advanced> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.geopose.advanced> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/geopose/advanced/index.md> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <https://docs.ogc.org/dis/21-056r10/21-056r10.html> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "GeoPose Advanced" ;
     skos:topConceptOf <https://rob-metalinkage.github.io/bblocks/> ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/advanced/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/advanced/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/advanced/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/advanced/schema.json> ;
             prof:hasRole role:schema ] ;
     bblocks:hasSourceJsonLdContext <https://rob-metalinkage.github.io/bblocks/registereditems/geo/geopose/advanced/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/geo> ;
@@ -129,25 +129,25 @@
     rdfs:label "GeoPose Basic-Quaternion" ;
     dct:abstract "Basic GeoPose using quaternion to specify orientation"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-07-13T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/geopose/basic/quaternion/index.json> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/geopose/basic/quaternion/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.geopose.basic.quaternion> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/geopose/basic/quaternion/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.geopose.basic.quaternion> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <https://docs.ogc.org/dis/21-056r10/21-056r10.html> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "GeoPose Basic-Quaternion" ;
     skos:topConceptOf <https://rob-metalinkage.github.io/bblocks/> ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/geopose/basic/quaternion/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
@@ -164,14 +164,14 @@
     rdfs:label "GeoPose Basic-YPR" ;
     dct:abstract "Basic GeoPose using yaw, pitch, and roll to specify orientation"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-03-15T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/geopose/basic/ypr/index.json> ],
+        [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/geopose/basic/ypr/index.md> ],
         [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.geopose.basic.ypr> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/geopose/basic/ypr/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.geopose.basic.ypr> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <https://docs.ogc.org/dis/21-056r10/21-056r10.html> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "GeoPose Basic-YPR" ;
@@ -199,35 +199,35 @@
     rdfs:label "JSON-FG Feature - Lenient - with GeoSPARQL Geometry" ;
     dct:abstract "A OGC Features and Geometries JSON (JSON-FG) Feature that does not require the \"time\" and \"place\" properties, and with a GeoSPARQL \"geometry\"."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-07-09T11:27:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/feature-lenient-geosparql-geometry/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.feature-lenient-geosparql-geometry> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/feature-lenient-geosparql-geometry/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/feature-lenient-geosparql-geometry/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/feature-lenient-geosparql-geometry/index.md> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <http://docs.ogc.org/per/21-017r1.html> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "JSON-FG Feature - Lenient - with GeoSPARQL Geometry" ;
     skos:topConceptOf <https://rob-metalinkage.github.io/bblocks/> ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.geosparqlGeometry> ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/geosparqlGeometry/rules.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient-geosparql-geometry/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient-geosparql-geometry/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient-geosparql-geometry/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature-lenient-geosparql-geometry/schema.yaml> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo shacl: ;
-            dct:format "text/turtle" ;
-            rdfs:seeAlso <bblocks://ogc.geo.features.geosparqlGeometry> ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/geosparqlGeometry/rules.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.geo.features.geosparqlGeometry>,
         <bblocks://ogc.geo.json-fg.feature-lenient> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/geo> ;
@@ -247,7 +247,7 @@
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/featureCollection/index.json> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <http://docs.ogc.org/per/21-017r1.html> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "JSON-FG Feature Collection" ;
@@ -278,29 +278,29 @@
     rdfs:label "JSON-FG Feature Collection - Lenient" ;
     dct:abstract "A collection of lenient OGC Features and Geometries JSON (JSON-FG) Features, that do not require the \"time\" and \"place\" properties"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-08-08T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.featureCollection-lenient> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/featureCollection-lenient/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.featureCollection-lenient> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/featureCollection-lenient/index.json> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <http://docs.ogc.org/per/21-017r1.html> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "JSON-FG Feature Collection - Lenient" ;
     skos:topConceptOf <https://rob-metalinkage.github.io/bblocks/> ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/context.jsonld> ;
             prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/featureCollection-lenient/schema.yaml> ;
             prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.geo.features.featureCollection>,
         <bblocks://ogc.geo.json-fg.feature-lenient>,
@@ -323,7 +323,7 @@
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/link-role/index.json> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "Link with role and target conformance" ;
     skos:topConceptOf <https://rob-metalinkage.github.io/bblocks/> ;
@@ -334,14 +334,14 @@
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/context.jsonld> ;
-            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/link-role/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.ogc-utils.iri-or-curie>,
         <bblocks://ogc.ogc-utils.json-link> ;
     bblocks:hasSourceJsonLdContext <https://rob-metalinkage.github.io/bblocks/registereditems/geo/json-fg/link-role/context.jsonld> ;
@@ -357,12 +357,12 @@
     dct:created "2023-04-05T00:00:00+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.ogc-utils.topology> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/ogc-utils/topology/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/ogc-utils/topology/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/ogc-utils/topology/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/ogc-utils/topology/index.md> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "Geometry using references" ;
     skos:topConceptOf <https://rob-metalinkage.github.io/bblocks/> ;
@@ -415,14 +415,14 @@
     rdfs:label "Bounding Box" ;
     dct:abstract "The bounding box JSON object describes a simple spatial extent of a resource. For OGC API’s this could be a feature, a feature collection or a dataset, but it can be used in any JSON resource that wants to communicate its rough location. The extent is simple in that the bounding box does not describe the precise location and shape of the resource, but provides an axis-aligned approximation of the spatial extent that can be used as an initial test whether two resources are potentially intersecting each other."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2022-05-24T13:51:38+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/common/data_types/bounding_box/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.common.data_types.bounding_box> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/common/data_types/bounding_box/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/common/data_types/bounding_box/index.json> ] ;
     dct:hasVersion "1.0.1" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <http://www.opengis.net/doc/IS/ogcapi-features-1/1.0#_response_4> ;
     modspec:requirementsClass <https://rob-metalinkage.github.io/...> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
@@ -446,14 +446,14 @@
     rdfs:label "JSON-FG Feature" ;
     dct:abstract "A OGC Features and Geometries JSON (JSON-FG) Feature, extending GeoJSON to support a limited set of additional capabilities that are out-of-scope for GeoJSON, but that are important for a variety of use cases involving feature data."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-31T14:56:51+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/feature/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.feature> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/feature/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/feature/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/feature/index.md> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <http://docs.ogc.org/per/21-017r1.html> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "JSON-FG Feature" ;
@@ -462,14 +462,14 @@
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.json> ;
             prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld> ;
-            prof:hasRole role:mapping ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/json-fg/feature/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.geo.features.feature>,
         <bblocks://ogc.geo.json-fg.time>,
         <bblocks://ogc.ogc-utils.json-link> ;
@@ -484,30 +484,30 @@
     rdfs:label "GeoJSON" ;
     dct:abstract "A GeoJSON object"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-24T14:56:51+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/common/data_types/geojson/index.md> ],
-        [ dct:format "text/html" ;
+    dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.common.data_types.geojson> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/common/data_types/geojson/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/common/data_types/geojson/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/common/data_types/geojson/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <https://datatracker.ietf.org/doc/html/rfc7946> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "GeoJSON" ;
     skos:topConceptOf <https://rob-metalinkage.github.io/bblocks/> ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.json> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/yaml" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/common/data_types/geojson/schema.yaml> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:mapping ] ;
     bblocks:hasSourceJsonLdContext <https://rob-metalinkage.github.io/bblocks/registereditems/geo/common/data_types/geojson/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/geo> ;
     bblocks:status <http://www.opengis.net/def/status/stable> ;
@@ -526,23 +526,23 @@
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/features/featureCollection/index.json> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_5> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "Feature Collection" ;
     skos:topConceptOf <https://rob-metalinkage.github.io/bblocks/> ;
-    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.yaml> ;
             prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/schema.json> ;
-            prof:hasRole role:schema ] ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/featureCollection/context.jsonld> ;
+            prof:hasRole role:mapping ] ;
     bblocks:dependsOn <bblocks://ogc.geo.features.feature>,
         <bblocks://ogc.ogc-utils.json-link> ;
     bblocks:hasSourceJsonLdContext <https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/feature/context.jsonld> ;
@@ -556,14 +556,14 @@
     rdfs:label "JSON-FG Feature - Lenient" ;
     dct:abstract "A OGC Features and Geometries JSON (JSON-FG) Feature that does not require the \"time\" and \"place\" properties."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-08-08T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.feature-lenient> ],
-        [ dct:format "text/markdown" ;
+    dct:description [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/feature-lenient/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.feature-lenient> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/feature-lenient/index.json> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <http://docs.ogc.org/per/21-017r1.html> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "JSON-FG Feature - Lenient" ;
@@ -593,14 +593,14 @@
         bblocks:Schema ;
     rdfs:label "JSON-FG time member" ;
     dct:created "2024-05-28T09:45:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.time> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/time/index.json> ],
         [ dct:format "text/markdown" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/json-fg/time/index.md> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/json-fg/time/index.json> ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.json-fg.time> ] ;
     dct:hasVersion "0.2.2" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <http://docs.ogc.org/per/21-017r1.html> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "JSON-FG time member" ;
@@ -628,14 +628,14 @@
     rdfs:label "IRI or CURIE" ;
     dct:abstract "This Building Block defines a data type for a full IRI/URI or a CURIE (with or without a prefix)"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-08-08T00:00:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/ogc-utils/iri-or-curie/index.md> ],
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/ogc-utils/iri-or-curie/index.json> ],
         [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.ogc-utils.iri-or-curie> ],
-        [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/ogc-utils/iri-or-curie/index.json> ] ;
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/ogc-utils/iri-or-curie/index.md> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <https://www.ietf.org/rfc/rfc3986.txt>,
         <https://www.ietf.org/rfc/rfc3987.txt>,
         <https://www.w3.org/TR/curie/> ;
@@ -662,27 +662,27 @@
     rdfs:label "Feature" ;
     dct:abstract "A feature. Every feature is a sub-resource of an OGC Collection."^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2023-05-24T14:56:51+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.features.feature> ],
-        [ dct:format "application/json" ;
+    dct:description [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/features/feature/index.json> ],
         [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/features/feature/index.md> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/features/feature/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.features.feature> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <https://docs.ogc.org/is/17-069r3/17-069r3.html#_response_7>,
         <https://www.iso.org/standard/59164.html> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "Feature" ;
     skos:topConceptOf <https://rob-metalinkage.github.io/bblocks/> ;
-    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+    prof:hasResource [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
             dct:format "application/ld+json" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/context.jsonld> ;
             prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/schema.json> ;
+            prof:hasRole role:schema ],
         [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/feature/schema.yaml> ;
@@ -701,26 +701,18 @@
     rdfs:label "Mixin for feature with GeoSPARQL geometry" ;
     dct:abstract "This schema can be used as a mixin for feature objects to represent their geometry as a literal GeoSPARQL value instead of an RDF resource"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
     dct:created "2024-07-09T10:57:00+00:00"^^xsd:dateTime ;
-    dct:description [ dct:format "text/html" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.features.geosparqlGeometry> ],
+    dct:description [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/features/geosparqlGeometry/index.md> ],
         [ dct:format "application/json" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/geo/features/geosparqlGeometry/index.json> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/geo/features/geosparqlGeometry/index.md> ] ;
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.geo.features.geosparqlGeometry> ] ;
     dct:hasVersion "1.0" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "Mixin for feature with GeoSPARQL geometry" ;
     skos:topConceptOf <https://rob-metalinkage.github.io/bblocks/> ;
     prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
-            dct:format "application/json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/schema.json> ;
-            prof:hasRole role:schema ],
-        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
-            dct:format "application/ld+json" ;
-            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld> ;
-            prof:hasRole role:mapping ],
-        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
             dct:format "application/yaml" ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/schema.yaml> ;
             prof:hasRole role:schema ],
@@ -728,7 +720,15 @@
             dct:format "text/turtle" ;
             rdfs:seeAlso <bblocks://ogc.geo.features.geosparqlGeometry> ;
             prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/geosparqlGeometry/rules.shacl> ;
-            prof:hasRole role:validation ] ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://rob-metalinkage.github.io/bblocks/annotated-schemas/geo/features/geosparqlGeometry/schema.json> ;
+            prof:hasRole role:schema ] ;
     bblocks:dependsOn <bblocks://ogc.geo.common.data_types.geojson> ;
     bblocks:hasSourceJsonLdContext <https://rob-metalinkage.github.io/bblocks/registereditems/geo/features/geosparqlGeometry/context.jsonld> ;
     bblocks:scope <http://www.opengis.net/def/bblocks/scope/geo> ;
@@ -745,12 +745,12 @@
     dct:created "2022-05-18T15:21:59+00:00"^^xsd:dateTime ;
     dct:description [ dct:format "text/html" ;
             rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/register/bblock/ogc.ogc-utils.json-link> ],
-        [ dct:format "text/markdown" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/ogc-utils/json-link/index.md> ],
         [ dct:format "application/json" ;
-            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/ogc-utils/json-link/index.json> ] ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/json-full/ogc-utils/json-link/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://rob-metalinkage.github.io/bblocks/generateddocs/markdown/ogc-utils/json-link/index.md> ] ;
     dct:hasVersion "0.1" ;
-    dct:modified "2025-12-28"^^xsd:date ;
+    dct:modified "2026-01-04"^^xsd:date ;
     dct:source <https://www.rfc-editor.org/rfc/rfc8288.txt> ;
     skos:inScheme <https://rob-metalinkage.github.io/bblocks/> ;
     skos:prefLabel "JSON Link" ;
@@ -792,7 +792,7 @@ Notes:
 1. Building Block identification will be designed to support transition between governance domains without change using symbolic references.
 1. A formal definition of Building Blocks and the level of "granularity" they represent with respect to the OGC Modular Specification is TBD.
 """^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
-    dct:modified "2026-01-04T04:52:53.057494"^^xsd:dateTime ;
+    dct:modified "2026-01-11T04:52:10.749535"^^xsd:dateTime ;
     void:sparqlEndpoint <https://defs-dev.opengis.net/fuseki/query> ;
     skos:hasTopConcept <bblocks://ogc.geo.common.data_types.bounding_box>,
         <bblocks://ogc.geo.common.data_types.geojson>,
@@ -818,9 +818,9 @@ Notes:
     foaf:homepage <https://rob-metalinkage.github.io/bblocks/register/> ;
     bblocks:hasValidationReport <https://rob-metalinkage.github.io/bblocks/tests/report.html> .
 
-_:Nfb2bdd5be0d446e2beffb582cfd09754 a prov:Agent,
+_:N2c98d9e8024948608c9bab92e635c719 a prov:Agent,
         schema:SoftwareApplication ;
     rdfs:label "OGC-NA tools" ;
-    dct:hasVersion "0.5.10" ;
+    dct:hasVersion "0.5.12" ;
     rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
 

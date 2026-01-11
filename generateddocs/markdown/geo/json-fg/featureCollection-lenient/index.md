@@ -74,8 +74,8 @@ Links to the schema:
     "links": {
       "@context": {
         "href": {
-          "@type": "@id",
-          "@id": "oa:hasTarget"
+          "@id": "oa:hasTarget",
+          "@type": "@id"
         },
         "rel": {
           "@context": {
@@ -96,12 +96,40 @@ Links to the schema:
         "id": "@id",
         "geometry": {
           "@context": {
-            "coordinates": "geojson:coordinates"
+            "coordinates": {
+              "@container": "@list",
+              "@id": "geojson:coordinates"
+            }
           },
-          "@id": "geo:hasGeometry"
+          "@id": "geojson:geometry",
+          "@type": "@json"
         },
-        "bbox": "geojson:bbox"
+        "bbox": {
+          "@container": "@list",
+          "@id": "geojson:bbox"
+        },
+        "featureType": "@type",
+        "time": {
+          "@context": {
+            "date": {
+              "@id": "owlTime:hasTime",
+              "@type": "xsd:date"
+            },
+            "timestamp": {
+              "@id": "owlTime:hasTime",
+              "@type": "xsd:dateTime"
+            },
+            "interval": {
+              "@id": "owlTime:hasTime",
+              "@container": "@list"
+            }
+          },
+          "@id": "dct:time"
+        },
+        "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
+        "place": "dct:spatial"
       },
+      "@container": "@set",
       "@id": "geojson:features"
     },
     "properties": "@nest",

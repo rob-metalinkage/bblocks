@@ -194,12 +194,18 @@ Links to the schema:
         "id": "@id",
         "geometry": {
           "@context": {
-            "coordinates": "geojson:coordinates"
+            "coordinates": {
+              "@id": "geojson:coordinates",
+              "@container": "@list"
+            }
           },
           "@id": "geo:hasGeometry",
           "@type": "@json"
         },
-        "bbox": "geojson:bbox",
+        "bbox": {
+          "@id": "geojson:bbox",
+          "@container": "@list"
+        },
         "links": {
           "@context": {
             "href": {
@@ -241,8 +247,8 @@ Links to the schema:
         "coordRefSys": "http://www.opengis.net/def/glossary/term/CoordinateReferenceSystemCRS",
         "place": "dct:spatial"
       },
-      "@container": "@set",
-      "@id": "geojson:features"
+      "@id": "geojson:features",
+      "@container": "@set"
     },
     "links": {
       "@context": {
